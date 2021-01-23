@@ -13,12 +13,17 @@
   url = "#posts"
   weight = 20
 
-#[[main]]
- # name = "Tiimi"
- # url ="/people"
- # weight = 30
+[[main]]
+  name = "Tiimi"
+  url ="/people"
+  weight = 30
+
+[[main]]
+  name = "Tapahtumat"
+  url ="/tapahtumat"
+  weight = 40
 
 [[main]]
   name = "Ota yhteyttä"
   url = "#contact"
-  weight = 60
+  weight = 999
