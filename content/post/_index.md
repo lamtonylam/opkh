@@ -1,5 +1,5 @@
 ---
-title: Posts
+title: Uutiset
 
 # View.
 #   1 = List

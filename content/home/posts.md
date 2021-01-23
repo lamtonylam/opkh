@@ -9,7 +9,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 60
 
-title: Recent Posts
+title: Uutiset
 subtitle:
 
 content:
@@ -39,3 +39,4 @@ design:
   #   4 = Citation (publication only)
   view: 2
 ---
+
