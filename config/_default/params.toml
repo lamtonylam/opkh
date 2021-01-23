@@ -97,7 +97,7 @@ address = {street = "Mäkelänkatu 84", city = "Helsinki", region = "", postcode
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "37.4275", longitude = "-122.1697"}
+coordinates = {latitude = "60.210378", longitude = "24.943564"}
 
 # Directions for visitors to locate you.
 directions = "OPKH-huoneen löydät toisesta kerroksesta, luokka 225"
