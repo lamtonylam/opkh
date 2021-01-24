@@ -1,0 +1,17 @@
+name: Crush images
+on:
+  workflow_dispatch:
+
+jobs:
+  crush:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Crush images
+        uses: crush-pics/crush-pics-github-action@master
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          api-key: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpbiI6ImxhbXRvbnlsYW1AZ21haWwuY29tIiwiZW1haWwiOm51bGwsInBsYW4iOiJmcmVlIiwidG9rZW5fY3JlYXRlZF9hdCI6MTYxMTUwMDQxOCwicXVvdGEiOnsidG90YWxfYnl0ZXMiOjI1MDAwMDAwLCJ1c2VkX2J5dGVzIjowfX0.bX1aiSdA_NCqAs9B6_79JO92NLX3zXopJKZqu4UTTFE
+          
+          
