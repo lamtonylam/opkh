@@ -21,7 +21,7 @@ design:
 ---
 
 <center>
-<iframe src="https://ruokalistat.azurewebsites.net/#/89fdbfde-ea98-e511-9417-00215a9c1ca7" width="65%" height="350">
+<iframe src="https://ruokalistat.azurewebsites.net/#/8cfdbfde-ea98-e511-9417-00215a9c1ca7" width="65%" height="350">
   <p>Your browser does not support iframes.</p>
 </iframe>
 </center>

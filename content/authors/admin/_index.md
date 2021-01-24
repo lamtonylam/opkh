@@ -69,7 +69,10 @@ email: ""
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 ---
+Hellun OPKH:n virallinen nettisivusto!
 
-[Tiimimme löydät täältä!](/people)
+Muistathan käydä seuraamassa meitä myös **[Instagramissa](https://instagram.com/hellu_opkh)**
 
-[Tulevat tapahtumat löydät täältä!](/tapahtumat)
+**[Tiimimme löydät täältä!](/people)**
+
+**[Tulevat tapahtumat löydät täältä!](/tapahtumat)**
