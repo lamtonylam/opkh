@@ -19,8 +19,15 @@ content:
   # Choose which groups/teams of users to display.
   #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
   user_groups:
+  - Puheenjohtaja
+  - Varapuheenjohtaja
+  - Taloudenhoitaja
+  - Sihteeri
   - Viestintävastaavat
-
+  - SLL-vastaava
+  - Tapahtumavastaavat
+  - Kirjakirppisvastaavat
+  - Kahvikonevastaava
 design:
   show_interests: false
   show_role: true

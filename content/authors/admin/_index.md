@@ -70,3 +70,6 @@ email: ""
 highlight_name: false
 ---
 
+[Tiimimme löydät täältä!](/people)
+
+[Tulevat tapahtumat löydät täältä!](/tapahtumat)
