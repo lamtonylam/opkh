@@ -52,4 +52,19 @@ alt="website statistics"></a></div></noscript>
 <noscript><div><img src="https://mc.yandex.ru/watch/71477281" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
+
+<!-- Algolia -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript">
+  algoliasearchNetlify({
+    appId: 'J1GZGYGXSE',
+    apiKey: '<YOUR_ALGOLIA_SEARCH_API_KEY>',
+    siteId: 'e5092d9d-6d1e-4939-9857-95718760d95f',
+    branch: 'master',
+    selector: 'div#search',
+  });
+</script>
+<!-- Algolia -->
+
 </head>
