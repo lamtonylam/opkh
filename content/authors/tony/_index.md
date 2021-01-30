@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Viestintävastaava
+role: Viestintävastaava tony@opkh.fi
 
 # Organizations/Affiliations
 #organizations:
@@ -42,19 +42,13 @@ interests:
 social:
 - icon: envelope
   icon_pack: fas
-  link: https://rebrand.ly/0e10hjw 
-  label: Email me!
-  display:
-    header: true
+  link: mailto:tony@opkh.fi 
 - icon: twitter
   icon_pack: fab
   link: https://rebrand.ly/24934
 - icon: linkedin
   icon_pack: fab
   link: https://rebrand.ly/6l7w1u3
-  label: Connect with me on LinkedIn!
-  display:
-    header: true
 - icon: instagram
   icon_pack: fab
   link: https://www.instagram.com/tony1am/
@@ -83,9 +77,12 @@ Terve! Olen Tony! Hellun OPKH:n viestintävastaava!
 Vapaa-ajalani: 
 - Koodailen tosi hyvää koodia ("tosi hyvää" taitaa olla liioittelua lol ;D)
 - Pelaan PC-pelejä
-  - Discordissa: **einesruoka#5006**
   - CS:GO on ehdoton suoskki
+- Heittelen frisbeegolfia
 
+{{< youtube id="dQw4w9WgXcQ" autoplay="true" >}}
+
+<br>
 
 <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="lamtonylam"><a class="LI-simple-link" href='https://fi.linkedin.com/in/lamtonylam?trk=profile-badge'>Tony Lam</a></div>
 

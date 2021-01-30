@@ -6,7 +6,7 @@ title: Hellun OPKH
 superuser: true
 
 # Role/position/tagline
-role: Hellun OPKH
+role: Helsingin luonnontiedelukion oppilaskunnan hallitus
 
 # Organizations/Affiliations to show in About widget
 #organizations:
@@ -69,10 +69,15 @@ email: ""
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 ---
-Hellun OPKH:n virallinen nettisivusto!
+**Hellun OPKH:n virallinen nettisivusto!**
 
 Muistathan käydä seuraamassa meitä myös **[Instagramissa](https://instagram.com/hellu_opkh)**
 
 **[Tiimimme löydät täältä!](/people)**
 
 **[Tulevat tapahtumat löydät täältä!](/tapahtumat)**
+
+<sub><sup>
+Tägit:
+Helsingin luonnontiedelukio, oppilaskunnanhallitus, oppilaskunta, opiskelijakunta, opiskelijakunnan hallitus
+</sup></sub>
