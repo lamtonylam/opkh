@@ -8,7 +8,7 @@ featured: false
 image:
   placement: 1
   focal_point: "smart"
-  preview_only: true
+  preview_only: false
 
 authors: ["tony"]
 url: "/uusiutuva"
