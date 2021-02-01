@@ -11,6 +11,7 @@ image:
   preview_only: true
 
 authors: ["tony"]
+url: "/uusiutuva"
 ---
 Lisätietoja sivun pilvipalvelujen ekologisesta vastuullisuudesta:
 
