@@ -16,6 +16,7 @@ This site uses 3rd party trackers that use cookies.
 - Statcounter (analytics)
 - Google Analytics (analytics)
 - Yandex Metrika (analytics)
+- Leadfeeder (lead generation)
 
 3rd party services that may use cookies.
 - Google Maps (maps)
