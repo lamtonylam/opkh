@@ -1,30 +1,30 @@
 <footer class="site-footer">
-  
+
+
   {{ if or (site.GetPage "terms.md") (site.GetPage "privacy.md") }}
   <p class="powered-by">
-    {{ with site.GetPage "privacy.md" }}
-      {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
-    {{ end }}
-    {{ with site.GetPage "terms.md" }}
-      {{ if site.GetPage "privacy.md" }} &middot; {{ end }}
-      {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
-    {{ end }}
   </p>
   {{ end }}
 
   <p class="powered-by">
     {{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify}} &middot; {{ end }}
    
-    
+   
     
     Sivun tehnyt:
     <a href="https://lamtonylam.github.io" target="_blank" rel="noopener">Tony Lam</a><br />
     <br />
     
-    Ohjelmistojen
-    <a href="/licenses" target="_blank" rel="noopener">lisenssit</a><br />
+    <a href="https://sustainability.aboutamazon.com/environment/the-cloud?energyType=true" target="_blank" rel="noopener">Tämän sivuston pilvipalvelimet käyttävät uusiutuvia energialähteitä 🌲 ♻️</a><br />
+    <br />
+  
+    <a href="/licenses" target="_blank" rel="noopener">Ohjelmistojen lisenssit</a><br />
     <br />
 
+
+    
+    <a href="/privacy" target="_blank" rel="noopener">Tietosuojalauseke</a><br />
+    <br />
 
 
 

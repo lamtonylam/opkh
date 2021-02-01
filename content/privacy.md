@@ -13,7 +13,15 @@ header:
 ---
 This site uses 3rd party trackers that use cookies.
 
-- Statcounter
-- Google Analytics
-- Yandex Metrika
-- Tawk.to
+- Statcounter (analytics)
+- Google Analytics (analytics)
+- Yandex Metrika (analytics)
+
+3rd party services that may use cookies.
+- Google Maps (maps)
+- Netlify (Back-end server)
+- Tawk.to (chat widget)
+- Instagram embed (social media)
+- Youtube embed (social media)
+
+We will never sell any data to 3rd parties. All data is for analytical purposes only.

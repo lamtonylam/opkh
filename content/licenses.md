@@ -11,6 +11,5 @@ This website uses free software from:
 
 - [Wowchemy](https://github.com/wowchemy/wowchemy-hugo-modules)
 - [Font Awesome](https://fontawesome.com/license/free)
-- [Mapbox maps](https://github.com/mapbox/mapbox-gl-js)
-
+- [Hugo](https://gohugo.io/)
 
