@@ -1,8 +1,8 @@
 ---
-title: 22.1.2021 / 1. kokous
-subtitle: 22.1.2021 / 1. kokous
+title: 1. kokous 22. tammikuuta 2021
+subtitle: 1. kokous 22. tammikuuta 2021
 date: 2021-02-01T12:14:38.063Z
-summary: "22.1.2021 / 1. kokous"
+summary: "1. kokous 22. tammikuuta 2021"
 draft: false
 featured: false
 image:
