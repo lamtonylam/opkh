@@ -43,9 +43,15 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '/#contact'
+  label: Ota yhteyttä!
+  display:
+    header: true
 - icon: instagram
   icon_pack: fab
   link: https://instagram.com/hellu_opkh
+  label: Seuraa meitä IG:ssä!
+  display:
+    header: true
 #- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
  # icon_pack: fas
   #link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
@@ -83,3 +89,4 @@ Muistathan käydä seuraamassa meitä myös **[Instagramissa](https://instagram.
 Tägit:
 Helsingin luonnontiedelukio, oppilaskunnanhallitus, oppilaskunta, opiskelijakunta, opiskelijakunnan hallitus
 </sup></sub>
+
