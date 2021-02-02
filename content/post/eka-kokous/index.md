@@ -1,8 +1,8 @@
 ---
-title: 1. kokous 22. tammikuuta 2021
-subtitle: 1. kokous 22. tammikuuta 2021
+title: 1. kokous 22 tammikuuta 2021
+subtitle: Ensimmäinen kokous 22 tammikuuta 2021
 date: 2021-02-01T12:14:38.063Z
-summary: "1. kokous 22. tammikuuta 2021"
+summary: ""
 draft: false
 featured: false
 image:
@@ -12,7 +12,7 @@ image:
 
 categories: ["kirja"]
 authors: ["tony"]
-url: "/22.1.2021"
+url: "/eka-kokous"
 ---
 Helsingin Luonnontiedelukion opiskelijakunnan hallituksen kokous 22.1.2021
 Pöytäkirja
