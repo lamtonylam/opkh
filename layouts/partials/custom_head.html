@@ -4,8 +4,6 @@
   <meta name="description" content="Helsingin luonnontiedelukion oppilaskunnan hallitus">
   <html lang="fi">
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">  
-
 <link rel="dns-prefetch" href="https://embed.tawk.to">
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 <link rel="dns-prefetch" href="https://netlify.com">
@@ -16,96 +14,47 @@
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
 <!-- Leadfeeder -->
-<script>
-  (function(){
 
-    window.ldfdr = window.ldfdr || {};
-    (function(d, s, ss, fs){
-      fs = d.getElementsByTagName(s)[0];
-
-      function ce(src){
-        var cs  = d.createElement(s);
-        cs.src = src;
-        setTimeout(function(){fs.parentNode.insertBefore(cs,fs)}, 1);
-      }
-
-      ce(ss);
-    })(document, 'script', 'https://sc.lfeeder.com/lftracker_v1_DzLR5a5eqbxaBoQ2.js');
-  })();
-</script>
 <!-- Leadfeeder -->
 
 
-<!-- Default Statcounter code for OPKH https://opkh.fi -->
-<script type="text/javascript">
-var sc_project=12467365; 
-var sc_invisible=1; 
-var sc_security="747f6713"; 
+<script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.0.1/src/glowCookies.min.js"></script>
+<script>
+    glowCookies.start('en', { 
+        analytics: 'UA-162980675-4', 
+        policyLink: '/privacy',
+        customScript: [{ type: 'custom', position: 'body', content: `console.log('(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5LGSQ2B');');` }],
+        bannerDescription: 'Sivustomme käyttää evästeitä, voit hyväksyä tai kieltää ei pakollisten evästeiden käytön.                                                                  <br> <br> Käytössä on kuitenkin joitakin sivuston toiminnan kannalta pakollisia evästeitä. Tällaisia evästeitä ovat esimerkiksi sivustoilla olevat sosiaalisten medioiden tai videopalveluiden upotukset. <br></br>',
+        bannerLinkText: 'Lue lisää:',
+        acceptBtnText: 'Hyväksyn evästeet',
+        acceptBtnColor: 'white',
+        acceptBtnBackground: '#1F45FC',
+        rejectBtnText: 'En',
+        manageText: 'Muokkaa',
+      });
 </script>
-<script type="text/javascript"
-defer src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="website
-statistics" href="https://statcounter.com/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/12467365/0/747f6713/1/"
-alt="website statistics"></a></div></noscript>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LGSQ2B"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+
+<!-- Default Statcounter code for OPKH https://opkh.fi -->
+
 <!-- End of Statcounter Code -->
 
 <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/5f7b6625f0e7167d0016612e/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
+
   <!--End of Tawk.to Script-->
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-  ym(71477281, "init", {
-       clickmap:true,
-       trackLinks:true,
-       accurateTrackBounce:true
-  });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/71477281" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
 </head>
-
-<body>
-
-  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-  <script>
-  window.cookieconsent.initialise({
-    "palette": {
-      "popup": {
-        "background": "#237afc"
-      },
-      "button": {
-        "background": "#fff",
-        "text": "#237afc"
-      }
-    },
-    "theme": "classic",
-    "position": "bottom-left",
-    "content": {
-      "message": "Tämä sivusto käyttää evästeitä.",
-      "dismiss": "Selvä",
-      "link": "Lue lisää",
-      "href": "/privacy"
-    }
-  });
-  </script>
-
-</body>
