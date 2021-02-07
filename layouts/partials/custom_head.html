@@ -23,11 +23,20 @@
     glowCookies.start('en', { 
         analytics: 'UA-162980675-4', 
         policyLink: '/privacy',
-        customScript: [{ type: 'custom', position: 'head', content: `console.log('(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        customScript: [{ type: 'custom', position: 'body', content: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5LGSQ2B');');` }],
+})(window,document,'script','dataLayer','GTM-5LGSQ2B');` }],
+        customScript: [{ type: 'custom', position: 'body', content: `  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5f7b6625f0e7167d0016612e/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();` }],
         bannerDescription: 'Sivustomme käyttää evästeitä, voit hyväksyä tai kieltää ei pakollisten evästeiden käytön.                                                                  <br> <br> Käytössä on kuitenkin joitakin sivuston toiminnan kannalta pakollisia evästeitä. Tällaisia evästeitä ovat esimerkiksi sivustoilla olevat sosiaalisten medioiden tai videopalveluiden upotukset. <br></br>',
         bannerLinkText: 'Lue lisää:',
         acceptBtnText: 'Hyväksyn evästeet',
