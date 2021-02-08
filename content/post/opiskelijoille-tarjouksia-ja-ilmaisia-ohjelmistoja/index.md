@@ -1,8 +1,9 @@
 ---
 title: Opiskelijoille tarjouksia ja ilmaisia ohjelmistoja
 subtitle: Miksi maksaa turhasta?
+summary: Miksi maksaa turhasta?
 date: 2021-02-08T15:09:19.072Z
-draft: false
+draft: true
 featured: false
 authors:
   - tony
@@ -18,6 +19,7 @@ Ilmaiset ohjelmistot saat käyttämällä edu.hel.fi sähköpostitunnusta.
 ### Ilmaiset:
 
 #### Github student pack
+https://education.github.com/pack
 
 Monia ilmaisia ohjelmistoja esimerkiksi:
 
