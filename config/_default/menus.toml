@@ -20,7 +20,7 @@
 
 [[main]]
   name = "Tapahtumat"
-  url ="/tapahtumat"
+  url ="/event"
   weight = 40
 
 [[main]]
