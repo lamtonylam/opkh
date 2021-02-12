@@ -1,7 +1,7 @@
 ---
 title: OPKH:n ystävänpäivän ohjelmaa
 summary: Ystävänpäivän Spotify-soittolista ja Hellu Crush rakkaustesteri!
-date: 2021-02-10T15:09:19.072Z
+date: 2021-02-12
 draft: false
 featured: false
 authors:
