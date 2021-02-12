@@ -1,8 +1,8 @@
 ---
-title: 1. kokous 22 tammikuuta 2021
-subtitle: Ensimmäinen kokous 22 tammikuuta 2021
+title: 1. kokous 22.1.2021
+subtitle: 
 date: 2021-02-01T12:14:38.063Z
-summary: ""
+summary: "Ensimmäinen kokous 22.1.2021"
 draft: false
 featured: false
 image:

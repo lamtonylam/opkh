@@ -2,17 +2,18 @@
 title: Opiskelijoille tarjouksia ja ilmaisia ohjelmistoja
 subtitle: Miksi maksaa turhasta?
 summary: Miksi maksaa turhasta?
-date: 2021-02-08T15:09:19.072Z
-draft: true
+date: 2021-02-12
+draft: false
 featured: false
 authors:
   - tony
-categories: ["post"]
+#categories: [""]
 
 image:
-  filename: kuva.png
   focal_point: Smart
-  preview_only: true
+  preview_only: false
+  caption: '[Cliché stock photo](https://www.canva.com/photos/MADAZ9-ouLc-student-looking-at-money/)'
+
 url: "/alennukset"
 ---
 Alennukset ja ilmaiset ohjelmistot saat käyttämällä edu.hel.fi sähköpostitunnusta.
@@ -33,8 +34,13 @@ Monia ilmaisia ohjelmistoja esimerkiksi:
 * [Typeform Pro](https://www.typeform.com/pricing/) vuodeksi
 
 #### Autodesk tuoteperhe ilmaiseksi, etusi jopa 500€
-
 https://www.autodesk.com/education/edu-software/overview
+
+#### Notion ilmaiseksi, etusi 60€
+https://www.notion.so/students
+
+#### Figma ilmaiseksi kahdeksi vuodeksi, etusi 300€
+https://www.figma.com/education/
 
 ### Alennukset:
 
