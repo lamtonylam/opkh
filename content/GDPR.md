@@ -27,12 +27,13 @@ Opiskelijakunnan viestintävastaava toimii myöskin tietosuojavastaavana.
 
 ### 3. Rekistereiden nimet
 - Ota yhteyttä-lomake
+- Uutiskirje
 
 ### 4. Henkilötietojenkäsittelyn tarkoitus
 Rekistereiden tarkoituksena on tuottaa opiskelijakunnan toimesta lukion opiskelijoille palveluita.
 
 ### 5. Rekistereiden tietosisältö
-Nimi, sähköpostiosoite, syntymävuosi, lukuvosi, ansioluettelo (ja sen sisältämät tiedot).
+Nimi, sähköpostiosoite
 
 ### 6. Säännönmukaiset tietolähteet
 Rekistereihin tallennetut henkilötiedot ovat peräisin henkilöltä itseltään.

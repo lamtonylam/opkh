@@ -12,9 +12,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 70
 
-title: Ruokalista
-subtitle: (Beta) Tämä toiminto on vielä testausvaiheessa.
-
+title: Ruokalista 
+subtitle: Olen omena, olen pyöreä omena, olen punainen omena
 design:
   spacing:
     padding: ["20px", "0", "20px", "0"]

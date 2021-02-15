@@ -26,7 +26,6 @@ This site uses 3rd party trackers that use cookies.
 - Clarity.ms (analytics)
 - Fullstory (analytics and bug tracking)
 - Hotjar (analytics)
-- Cloudflare (analytics)
 
 3rd party services that may use cookies.
 - Google Maps (maps) (essential)

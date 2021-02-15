@@ -1,6 +1,6 @@
 ---
 title: Kesätyöpaikkoja nuorille!
-summary: Nosta peppusi ylös ja työmarkkinoille!
+summary: Get that bread 🤑
 date: 2021-02-15
 draft: false
 featured: false
