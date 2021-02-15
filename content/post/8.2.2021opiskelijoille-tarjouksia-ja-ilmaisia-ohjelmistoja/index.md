@@ -42,6 +42,9 @@ https://www.notion.so/students
 #### Figma ilmaiseksi kahdeksi vuodeksi, etusi 300€
 https://www.figma.com/education/
 
+#### Jetbrains, etusi jopa 500€
+https://www.jetbrains.com/community/education/#students
+
 ### Alennukset:
 
 #### {{< icon name="evernote" pack="fab" >}} Evernote -50%

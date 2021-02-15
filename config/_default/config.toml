@@ -115,3 +115,5 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 # Youtube antitrack
 [privacy.youtube]
   privacyEnhanced = true
+
+timeout = 60000
