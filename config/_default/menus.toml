@@ -24,6 +24,11 @@
   weight = 40
 
 [[main]]
+  name = "Meistä"
+  url = "/meista"
+  weight = 45
+
+[[main]]
   name = "Ota yhteyttä"
   url = "#contact"
-  weight = 999
+  weight = 50
