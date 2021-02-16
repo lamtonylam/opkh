@@ -13,7 +13,7 @@ headless: true
 weight: 70
 
 title: Ruokalista 
-subtitle: Olen omena, olen pyöreä omena, olen punainen omena
+subtitle: 
 design:
   spacing:
     padding: ["20px", "0", "20px", "0"]

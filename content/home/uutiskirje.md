@@ -12,7 +12,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 90
 
-title: Uutiskirje]
+title: Uutiskirje
 subtitle: Jos et hyväksynyt evästeitä, käy täyttämässä [lomake erillisellä sivustolla](https://lamtonylam.typeform.com/to/oCmOXOcR)
 
 design:
