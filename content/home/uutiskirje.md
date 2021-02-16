@@ -12,7 +12,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 90
 
-title: Uutiskirje
+title: Uutiskirje]
+subtitle: Jos et hyväksynyt evästeitä, käy täyttämässä [lomake erillisellä sivustolla](https://lamtonylam.typeform.com/to/oCmOXOcR)
 
 design:
   spacing:
@@ -26,6 +27,5 @@ design:
 
 <div class="cui-embed" style="height: 400px; width: 100%;" data-cui-uid="oCmOXOcR" data-cui-avatar="https://images.typeform.com/images/zK77UL9DNuwD" data-cui-mode="widget"></div> 
 
-<script src="https://public-assets.typeform.com/confab/embed.js" async></script>
 
 </center>
