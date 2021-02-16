@@ -13,7 +13,6 @@ headless: true
 weight: 90
 
 title: Uutiskirje
-subtitle: Liity OPKH:n uutiskirjeeseen saadaksesi kaikki uusimmat uutiset ja tapahtumat suoraan sähköpostiisi noin kerran kuukaudessa. Voit aina peruuttaa uutiskirjeen tilauksen
 
 design:
   spacing:
