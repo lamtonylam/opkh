@@ -281,3 +281,12 @@ plugins_js  = []
 ############################
 [icon.pack]
   ai = true  # Academicons icon pack https://jpswalsh.github.io/academicons/
+
+[security]
+[security.csp]
+  policy = '''
+    upgrade-insecure-requests;
+    frame-ancestors 'none';
+    '''
+  report_only = false
+
