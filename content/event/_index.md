@@ -13,6 +13,11 @@ header:
   image: ""
 ---
 Tänään on:
-<iframe src="http://free.timeanddate.com/clock/i7o8c5mr/n101/tlfi16/fs32/ftb/tt1/tw0" frameborder="0" width="298" height="39"></iframe>
-
-
+<h3> <span id="date"></span></h3>
+<script type="text/javascript" language="javascript">
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = d  + "." + m + "." + y;
+</script>
