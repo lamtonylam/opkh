@@ -16,11 +16,11 @@ image:
 
 url: "/java"
 ---
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/720742b236ba4472b90032e63952177a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-<br>
+<iframe width="100%" height="480" src="https://www.loom.com/embed/720742b236ba4472b90032e63952177a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Tässä latauslinkki suoraan versioon 8  
 https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot
+
 {{< figure src="Näyttökuva 2021-02-19 144925.png" lightbox="false" >}}
 
 Eli lyhyesti miksi näin on: Java JDK 11 on periaatteessa liian uusi meidän kurssillemme.  
