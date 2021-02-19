@@ -2,12 +2,12 @@
 title: Opiskelijoille tarjouksia ja ilmaisia ohjelmistoja
 subtitle: Miksi maksaa turhasta?
 summary: Miksi maksaa turhasta?
-date: 2021-02-12
+date: 2021-02-19
 draft: false
 featured: false
 authors:
   - tony
-#categories: [""]
+categories: ["post"]
 
 image:
   focal_point: Smart
