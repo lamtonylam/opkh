@@ -30,9 +30,11 @@ This site uses 3rd party trackers that use cookies.
 3rd party services that may use cookies.
 - Google Maps (maps) (essential)
 - Netlify (Back-end server) (essential)
-- Tawk.to (chat widget)
+- Loom (video embed) (essential)
 - Instagram embed (social media) (essential)
 - Youtube embed (social media) (essential)
+- Tawk.to (chat widget)
+- Typeform (forms)
 
 From gathered data, it is not possible to identify a single person.
 We will never sell any data to 3rd parties. All data is for analytical purposes only.
