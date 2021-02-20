@@ -32,7 +32,7 @@ This site uses 3rd party trackers that use cookies.
 - Netlify (Back-end server) (essential)
 - Loom (video embed) (essential)
 - Instagram embed (social media) (essential)
-- Youtube embed (social media) (essential)
+- Youtube embed (social media) (essential) using Youtube's privacy mode https://support.google.com/youtube/answer/171780?hl=en#zippy=%2Cturn-on-privacy-enhanced-mode
 - Tawk.to (chat widget)
 - Typeform (forms)
 
