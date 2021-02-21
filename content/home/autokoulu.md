@@ -29,5 +29,6 @@ design:
 
 [![Epic Autokoulu](https://www.epicautokoulu.fi/wp-content/uploads/2013/07/asAsset-3-1.png)](https://www.epicautokoulu.fi/helsinki/)
 
-</center>
 
+
+</center>
