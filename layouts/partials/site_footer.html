@@ -1,6 +1,9 @@
 <footer class="site-footer">
-
-
+  <center>
+  <button data-feedback-fish type="submit" class="btn btn-outline-primary px-3 py-2">
+    Anna palautetta painamalla tästä
+  </button>
+  </center>
   {{ if or (site.GetPage "terms.md") (site.GetPage "privacy.md") }}
   <p class="powered-by">
   </p>
@@ -20,5 +23,9 @@
     <br />
 
     <a href="/gdpr" target="_self" rel="noopener">GDPR-tietosuoja</a>
+
+<br>
+<script defer src="https://feedback.fish/ff.js?pid=6d442a0038956a"></script>
+
 
 </footer>

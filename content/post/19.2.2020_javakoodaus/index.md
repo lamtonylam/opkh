@@ -42,11 +42,8 @@ Mene ohjauspaneeliin ja paina "poista asennettu ohjelma"
 Valitse kohta "Entire feature will be installed on local hard drive"  
 Tee näin lopuille rukseille.
 {{< figure src="Näyttökuva 2021-02-21 221548.png" >}}
-
-
-
-
-
-
-
-Mac OS tutoriaalia en pysty tekemään, koska en omista Macciä enää.
+Paina sitten "next".  
+Valmista! Kokeile nyt pyörittämään testit koodillesi! Niiden pitäisi toimia.  
+Jos et saanut toimimaan pelkillä kirjallisilla ohjeilla, katso ohjevideo joka löytyy sivun yläosasta.  
+Jos sekään ei auttanut, ota yhteyttä Telegram DMs:  
+[https://t.me/mangoflamingo](https://t.me/mangoflamingo/)
