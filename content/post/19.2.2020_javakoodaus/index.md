@@ -16,8 +16,12 @@ image:
 
 url: "/java"
 ---
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/08347d9eb59c4704a52675e336b3d346" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/55fa2974fa8e4a12a2c4cf3fe06142a7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
+<br>
+
+
+<iframe src="https://share.getcloudapp.com/eDu8Xolp?embed=true&amp;title=true" width="575" height="400" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" style="border: none;" data-frame-src="https://share.getcloudapp.com/eDu8Xolp?embed=true&amp;title=true"></iframe>
 
 <br>
 
@@ -47,3 +51,5 @@ Valmista! Kokeile nyt pyörittämään testit koodillesi! Niiden pitäisi toimia
 Jos et saanut toimimaan pelkillä kirjallisilla ohjeilla, katso ohjevideo joka löytyy sivun yläosasta.  
 Jos sekään ei auttanut, ota yhteyttä Telegram DMs:  
 [https://t.me/mangoflamingo](https://t.me/mangoflamingo/)
+
+
