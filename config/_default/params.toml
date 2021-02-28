@@ -121,11 +121,8 @@ contact_links = [
 ## Social
 ############################
 
-# Default image for social sharing and search engines. Place image in `static/media/` folder and specify image name here.
-sharing_image = ""
-
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
-twitter = ""
+twitter = "lamtonylam"
 
 ############################
 ## Regional Settings
@@ -206,6 +203,7 @@ plugins_js  = []
   #   0: Disabled
   #   1: Disqus (https://disqus.com)
   #   2: Commento (https://commento.io)
+  # custom
   engine = 3
 
   # Which page types are commentable?
@@ -213,7 +211,7 @@ plugins_js  = []
 
   # Configuration of Disqus.
   [comments.disqus]
-    shortname = "opkh"  # Paste the shortname from your Disqus dashboard.
+    shortname = ""  # Paste the shortname from your Disqus dashboard.
     show_count = false  # Show comment count in page header? (true/false)
 
   # Configuration of Commento.
@@ -275,18 +273,10 @@ plugins_js  = []
 [cms]
   # See https://wowchemy.com/docs/install/
   netlify_cms = true
-
+  branch = "master"
 ############################
 ## Icon Pack Extensions
 ############################
 [icon.pack]
-  ai = true  # Academicons icon pack https://jpswalsh.github.io/academicons/
-
-[security]
-[security.csp]
-  policy = '''
-    upgrade-insecure-requests;
-    frame-ancestors 'none';
-    '''
-  report_only = false
+  ai = false  # Academicons icon pack https://jpswalsh.github.io/academicons/
 

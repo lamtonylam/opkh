@@ -14,6 +14,12 @@ image:
   preview_only: true
   caption: ''
 
+links:
+- icon: cloud-download-alt
+  icon_pack: fas
+  name: Lataa tästä Java
+  url: https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot
+
 url: "/java"
 ---
 <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/55fa2974fa8e4a12a2c4cf3fe06142a7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
@@ -51,5 +57,3 @@ Valmista! Kokeile nyt pyörittämään testit koodillesi! Niiden pitäisi toimia
 Jos et saanut toimimaan pelkillä kirjallisilla ohjeilla, katso ohjevideo joka löytyy sivun yläosasta.  
 Jos sekään ei auttanut, ota yhteyttä Telegram DMs:  
 [https://t.me/mangoflamingo](https://t.me/mangoflamingo/)
-
-
