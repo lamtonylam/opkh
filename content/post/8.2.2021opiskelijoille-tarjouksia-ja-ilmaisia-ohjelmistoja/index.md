@@ -45,6 +45,12 @@ https://www.figma.com/education/
 #### Jetbrains, etusi jopa 500€
 https://www.jetbrains.com/community/education/#students
 
+#### Loom
+https://www.loom.com/education
+
+### Cloudapp, etusi jopa 100€
+https://www.getcloudapp.com/education 
+
 ### Alennukset:
 
 #### {{< icon name="evernote" pack="fab" >}} Evernote -50%
