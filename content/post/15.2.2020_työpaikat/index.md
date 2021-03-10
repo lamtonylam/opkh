@@ -23,15 +23,6 @@ url: "/tyo"
 #### Kaikki kesätyöt
 #### [Duunitorista:](https://duunitori.fi/kesatyo?haku=&alue=P%C3%A4%C3%A4kaupunkiseutu#location-results)
 
-#### Bongauksia alle 18-vuotiaille:
-- Tokmanni  
-  - https://duunitori.fi/tyopaikat/tyo/kesatyopaikat-tokmannin-myymaloissa-ympari-suomen-stse-12747119
-  - Haku päättyy 16.02.2021
-
-- Helen
-  - https://duunitori.fi/tyopaikat/tyo/tutustu-tyoelamaan-ja-tienaa-projektiavustaja-2-vkoa-shsel-12830413  
-  - Haku päättyy 08.03.2021
-
 <br>
 
 #### [Keskon kesätyöt:](https://www.kesko.fi/tyopaikat/opiskelijoille-ja-vastavalmistuneille/tutustu-tyoelamaan-ja-tienaa--harjoittelu/)
@@ -43,6 +34,7 @@ Tutustu työelämään ja tienaa -harjoittelu
 <br>
 
 #### Pikaduuni
+Helsinki & Vantaa kesätöitä kesätyösetelillä  
 https://pikaduuni.fi/
 
 
