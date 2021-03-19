@@ -6,7 +6,6 @@ draft: false
 featured: false
 authors:
   - tony
-categories: ["post"]
 
 
 image:
