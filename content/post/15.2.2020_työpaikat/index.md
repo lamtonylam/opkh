@@ -1,7 +1,7 @@
 ---
 title: Kesätyöpaikkoja nuorille!
-summary: Get that bread 🤑
-date: 2021-02-15
+summary: Get that bread 🤑 (Päivitetty 8.4)
+date: 2021-04-08
 draft: false
 featured: false
 authors:
@@ -17,6 +17,8 @@ image:
 
 url: "/tyo"
 ---
+Päivitetty 8.4
+
 #### Alle 18-vuotiaiden kesätyöt löydät  
 #### [Duunitorista:](https://duunitori.fi/tyopaikat?filter_work_relation=summer_job&order_by=search_rank&alue=P%C3%A4%C3%A4kaupunkiseutu&filter_age_group=below_18&haku=&filter_age_group=below_18)
 
@@ -36,5 +38,11 @@ Tutustu työelämään ja tienaa -harjoittelu
 #### Pikaduuni
 Helsinki & Vantaa kesätöitä kesätyösetelillä  
 https://pikaduuni.fi/
+
+<br>
+
+#### Lidl tutustu työelämään ja tienaa
+- Harjoittelijalle maksetaan palkkaa 375 €.
+https://tyopaikat.lidl.fi/kesatyo/tutustu-tyoeelaemaeaen-ja-tienaa
 
 

@@ -10,7 +10,6 @@ image:
   focal_point: "smart"
   preview_only: false
 
-categories: ["post"]
 authors: ["tony"]
 url: "/uusiutuva"
 ---
