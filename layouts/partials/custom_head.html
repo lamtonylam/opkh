@@ -1,6 +1,5 @@
 <head>
 
-<title>Hellun OPKH</title>
 <html translate="no">
 
 <link rel="dns-prefetch" href="https://embed.tawk.to">
@@ -13,23 +12,25 @@
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
 
-<script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.0.1/src/glowCookies.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.1/src/glowCookies.min.js"></script>
 <script>
     glowCookies.start('en', { 
+        style: 1,
         analytics: 'UA-162980675-4',
-        hideAfterClick: true,
+        hideAfterClick: false,
         policyLink: '/privacy',
         customScript: [{ type: 'custom', position: 'head', content: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5LGSQ2B');` }],
-        bannerDescription: 'Sivustomme käyttää evästeitä, voit hyväksyä tai kieltää ei pakollisten evästeiden käytön. ',
-        bannerLinkText: 'Lue lisää',
-        acceptBtnText: 'Hyväksyn evästeet',
+        bannerDescription: 'Voit hyväksyä tai kieltää ei pakollisten evästeiden käytön. <br> <br> Näitä ovat esimerkiksi analytiikan ja markkinoinnin evästeet. <br> <br>',
+        bannerLinkText: ' Lue lisää aiheesta',
+        bannerHeading: 'Käytämme evästeitä',
+        acceptBtnText: 'Hyväksyn!',
         acceptBtnBackground: '#1F45FC',
-        rejectBtnText: 'En',
-        manageText: 'Muokkaa',
+        rejectBtnText: 'En hyväksy.',
+        manageText: 'Evästeasetukset',
       });
 </script>
 
