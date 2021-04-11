@@ -79,12 +79,6 @@ highlight_name: false
 
 Muistathan käydä seuraamassa meitä myös **[Instagramissa](https://instagram.com/hellu_opkh)**
 
-**[Tiimimme löydät täältä!](/people)**
-
-**[Tulevat tapahtumat löydät täältä!](/event)**
-
-
-
 <sub><sup>
 Helsingin luonnontiedelukio, opiskelijakunta, opiskelijakunnan hallitus, Hellun OPKH
 </sup></sub>

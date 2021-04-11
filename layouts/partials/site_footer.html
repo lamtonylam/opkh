@@ -1,15 +1,14 @@
 <footer class="site-footer">
-<center>
-  <button data-feedback-fish type="submit" class="btn btn-outline-primary px-3 py-2">
-    Anna palautetta painamalla tästä
-  </button>
-</center>
 
-<br>
+  <ul id="menu-horizontal" class="site-footer powered-by">
+    <li class="title"><a href="/#posts"><i class="far fa-newspaper"></i> Uutiset</a></li>
+    <li class="title"><a href="/people"><i class="fas fa-users"></i> Tiimi</a></li>
+    <li class="title"><a href="/event"><i class="fas fa-calendar-alt"></i> Tapahtumat</a></li>
+    <li class="title"><a href="/meista"><i class="fas fa-info-circle"></i> Meistä</a></li>
+    <li class="title"><a href="/#contact"><i class="fas fa-paper-plane"></i> Ota yhteyttä</a></li>
+    </ul>
 
-<center><iframe src="https://opkh.instatus.com/embed-status/light-sm" width="230" height="61" 
-  frameBorder="0" scrolling="no" style="border: none;"></iframe> </center>
-
+    <br>
 
   {{ if or (site.GetPage "terms.md") (site.GetPage "privacy.md") }}
   <p class="powered-by">
@@ -27,12 +26,10 @@
     <br />
       
     <a href="/legal" target="_self" rel="noopener">Lakisääteiset jutut</a><br />
-    <br />
 
-<br>
+    <center><iframe src="https://opkh.instatus.com/embed-status/light-sm" width="230" height="61" 
+      frameBorder="0" scrolling="no" style="border: none;"></iframe> </center>
 
-<script defer src="https://feedback.fish/ff.js?pid=6d442a0038956a"></script>
-
-
+    
 </footer>
 
