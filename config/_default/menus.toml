@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Uutiset"
-  url = "#posts"
+  url = "/uutiset"
   weight = 20
 
 [[main]]
@@ -30,5 +30,5 @@
 
 [[main]]
   name = "Ota yhteyttä"
-  url = "#contact"
+  url = "/contact"
   weight = 50

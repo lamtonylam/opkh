@@ -12,7 +12,7 @@ header:
   image: ""
 url: "/gdpr"
 ---
-Tämä on Helsingin luonnontiedelukion opiskelijakunnan EU:n yleisen tietosuoja-asetuksen (GDPR) mukainen rekisteri-ja tietosuojaseloste. Laadittu 9.2.2021 Viimeisin muutos 9.2.2021.
+Tämä on Helsingin luonnontiedelukion opiskelijakunnan EU:n yleisen tietosuoja-asetuksen (GDPR) mukainen rekisteri-ja tietosuojaseloste. Laadittu 9.2.2021 Viimeisin muutos 13.4.2021.
 
 ### 1. Rekisterinpitäjä
 Helsingin luonnontiedelukion opiskelijakunta  
@@ -39,13 +39,13 @@ Nimi, sähköpostiosoite
 Rekistereihin tallennetut henkilötiedot ovat peräisin henkilöltä itseltään.
 
 ### 7. Tietojen säännönmukaiset luovutukset
-Tietoja ei missään nimessä luovuteta muille tahoille kuin opiskelijakunnan sisäiseen käyttöön. Tietoja kuitenkin voidaan julkaista, jos tietoja koskevien henkilöiden suostumus on siihen saatu.
+Tietoja ei missään nimessä luovuteta muille tahoille kuin opiskelijakunnan sisäiseen käyttöön. Tietoja kuitenkin voidaan julkaista, jos tietoja koskevien henkilöiden täysi suostumus on siihen saatu.
 
 ### 8. Rekistereiden suojauksen periaatteet
 Rekisterin käsittelyssä noudatetaan erityistä huolellisuutta ja tietojärjestelmien tietoturva on tehty mahdollisimman turvalliseksi erilaisilla tietoturvaa parantavien toimenpiteiden avulla, näitä ovat esim. kaksivaiheisen suojauksen ottaminen käyttöön rekisteriä käsiteltäessä.
 
 ### 9. Tarkastusoikeus ja oikeus vaatia tiedon korjaamista
-Jokaisella rekisterissä olevalla henkilöllä on oikeus tarkistaa rekisteriin tallennetut tietonsa ja vaatia mahdollisen virheellisen tiedon korjaamistataipuutteellisen tiedon täydentämistä. Mikäli henkilö haluaa tarkistaa hänestä tallennetut tiedot tai vaatia niihin oikaisua, pyyntö tulee lähettää kirjallisesti rekisterinpitäjälle. Rekisterinpitäjä voi pyytää tarvittaessa pyynnön esittäjää todistamaan henkilöllisyytensä. Rekisterinpitäjä vastaa asiakkaalle EU:n tietosuoja-asetuksessa säädetyssä ajassa, eli pääsääntöisesti kuukauden kuluessa.
+Jokaisella rekisterissä olevalla henkilöllä on oikeus tarkistaa rekisteriin tallennetut tietonsa ja vaatia mahdollisen virheellisen tiedon korjaamista tai puutteellisen tiedon täydentämistä. Mikäli henkilö haluaa tarkistaa hänestä tallennetut tiedot tai vaatia niihin oikaisua, pyyntö tulee lähettää kirjallisesti rekisterinpitäjälle. Rekisterinpitäjä voi pyytää tarvittaessa pyynnön esittäjää todistamaan henkilöllisyytensä. Rekisterinpitäjä vastaa asiakkaalle EU:n tietosuoja-asetuksessa säädetyssä ajassa, eli pääsääntöisesti kuukauden kuluessa.
 
 ### 10. Muut henkilötietojen käsittelyyn liittyvät oikeudet
 Rekisterissä olevalla henkilöllä on oikeus pyytää häntä koskevien henkilötietojen poistamiseen rekisteristä. Niin ikään rekisteröidyillä on muut EU:n yleisen tietosuoja-asetuksen mukaiset oikeudetkuten henkilötietojen käsittelyn rajoittaminen tietyissä tilanteissa. Pyynnöt tulee lähettää kirjallisesti rekisterinpitäjälle. Rekisterinpitäjä voi pyytää tarvittaessa pyynnön esittäjää todistamaan henkilöllisyytensä. Rekisterinpitäjä vastaa asiakkaalle EU:n tietosuoja-asetuksessa säädetyssä ajassa, eli pääsääntöisesti kuukauden kuluessa.
