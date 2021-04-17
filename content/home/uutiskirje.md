@@ -25,8 +25,7 @@ design:
 <center>
 
 
-<div class="cui-embed" style="height: 400px; width: 100%;" data-cui-uid="oCmOXOcR" data-cui-avatar="https://images.typeform.com/images/zK77UL9DNuwD" data-cui-mode="widget"></div> 
-<script src="https://public-assets.typeform.com/confab/embed.js" async></script>
+<div class="cui-embed" style="height: 400px; width: 100%;" data-cui-uid="mHuVyoEU" data-cui-avatar="https://images.typeform.com/images/k6Chh9S3UwFB" data-cui-mode="widget"></div> <script src="https://public-assets.typeform.com/confab/embed.js" async></script>
 
 
 </center>

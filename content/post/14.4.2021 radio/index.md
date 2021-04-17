@@ -27,14 +27,11 @@ Biisitoiveita voi myös lähetttä Instagramin DM! https://www.instagram.com/hel
 
 <br>
 
-<div class="typeform-widget" data-url="https://form.typeform.com/to/NhRUggSG?typeform-medium=embed-snippet" data-hide-headers="true" style="width: 100%; height: 600px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+<div class="cui-embed" style="height: 400px; width: 100%;" data-cui-uid="NhRUggSG" data-cui-avatar="https://images.typeform.com/images/TxszwCaRhwHk" data-cui-mode="widget"></div> <script src="https://public-assets.typeform.com/confab/embed.js" async></script>
 
 Jos lomake ei näy, [paina tästä](https://opkh.typeform.com/to/NhRUggSG)
-
 <br>
 <br>
-
-
 Aiemmin soinut radiossa:
 <iframe class="airtable-embed" src="https://airtable.com/embed/shrQ32Xsuo3lijWSP?backgroundColor=orange&layout=card" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 <br>
