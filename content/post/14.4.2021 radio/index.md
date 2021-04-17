@@ -1,7 +1,7 @@
 ---
 title: "Helluradio"
-summary: Helluradioon ehdotuksia sekä seuraavaksi soitettavien biisien lista.
-subtitle: Helluradioon ehdotuksia sekä seuraavaksi soitettavien biisien lista.
+summary: Helluradioon ehdotuksia sekä soitettujen biisien lista.
+subtitle: Helluradioon ehdotuksia sekä soitettujen biisien lista.
 
 date: 2021-04-14
 draft: false
@@ -23,7 +23,7 @@ image:
 
 url: "/radio"
 ---
-Biisitoiveita voi myös lähetttä Instagramin DM! https://www.instagram.com/hellu_opkh/
+Biisitoiveita voi myös lähetttää Instagramin DM! https://www.instagram.com/hellu_opkh/
 
 <br>
 
