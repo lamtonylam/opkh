@@ -72,18 +72,16 @@ highlight_name: false
 user_groups:
 - Viestintävastaavat
 ---
-Terve! Olen Tony! Hellun OPKH:n viestintävastaava!
+Terve! Olen Tony! Hellun OPKH:n viestintävastaava!  
+Tehtäviini kuuluvat esimerkiksi:
+- Verkkosivujen ylläpitäminen ja toiminnan varmistaminen
+- Viestintä
+- Helluradion pitäminen
 
-Vapaa-ajalani: 
-- Koodailen tosi hyvää koodia ("tosi hyvää" taitaa olla liioittelua lol ;D)
+Vapaa-ajallani: 
 - Pelaan PC-pelejä
   - CS:GO on ehdoton suoskki
+  - Cities Skylines on myöskin ehdottomasti hyvä peli rentoutumiseen.
 - Heittelen frisbeegolfia
 
 {{< youtube id="dQw4w9WgXcQ" autoplay="true" >}}
-
-<br>
-
-<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="lamtonylam"><a class="LI-simple-link" href='https://fi.linkedin.com/in/lamtonylam?trk=profile-badge'>Tony Lam</a></div>
-
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
