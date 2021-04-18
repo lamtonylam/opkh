@@ -12,7 +12,7 @@ header:
   image: ""
 url: "/gdpr"
 ---
-Tämä on Helsingin luonnontiedelukion opiskelijakunnan EU:n yleisen tietosuoja-asetuksen (GDPR) mukainen rekisteri-ja tietosuojaseloste. Laadittu 9.2.2021 Viimeisin muutos 13.4.2021.
+Tämä on Helsingin luonnontiedelukion opiskelijakunnan EU:n yleisen tietosuoja-asetuksen (GDPR) mukainen rekisteri-ja tietosuojaseloste. Laadittu 9.2.2021 Viimeisin muutos 18.4.2021.
 
 ### 1. Rekisterinpitäjä
 Helsingin luonnontiedelukion opiskelijakunta  
@@ -28,6 +28,9 @@ Opiskelijakunnan viestintävastaava toimii myöskin tietosuojavastaavana.
 ### 3. Rekistereiden nimet
 - Ota yhteyttä-lomake
 - Uutiskirje
+- Palaute
+- Helluradio
+- Instagramin Direct-viestit
 
 ### 4. Henkilötietojenkäsittelyn tarkoitus
 Rekistereiden tarkoituksena on tuottaa opiskelijakunnan toimesta lukion opiskelijoille palveluita.
