@@ -28,9 +28,8 @@ Biisitoiveita voi myös lähetttää Instagramin DM! https://www.instagram.com/h
 <br>
 
 
-<iframe src="https://opkh.typeform.com/to/NhRUggSG?typeform-embed=oembed&amp;typeform-medium=embed-oembed&amp;format=json" style="border: 0; width: 100%; height: 500px;" allowfullscreen allow="encrypted-media"></iframe>
+<script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shr5EBHUmHzStubDx?backgroundColor=orange" frameborder="0" onmousewheel="" width="100%" height="1541" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
-Jos lomake ei näy, [paina tästä](https://opkh.typeform.com/to/NhRUggSG)
 <br>
 <br>
 Aiemmin soinut radiossa:
