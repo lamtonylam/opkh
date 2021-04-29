@@ -43,18 +43,18 @@ social:
 - icon: envelope
   icon_pack: fas
   link: mailto:tony@opkh.fi 
-- icon: twitter
-  icon_pack: fab
-  link: https://rebrand.ly/24934
+#- icon: twitter
+ # icon_pack: fab
+ # link: https://rebrand.ly/24934
 - icon: linkedin
   icon_pack: fab
   link: https://rebrand.ly/6l7w1u3
 - icon: instagram
   icon_pack: fab
   link: https://www.instagram.com/tony1am/
-- icon: snapchat
-  icon_pack: fab
-  link: https://snapchat.com/add/offical_tony
+#- icon: snapchat
+ # icon_pack: fab
+ # link: https://snapchat.com/add/offical_tony
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -84,4 +84,4 @@ Vapaa-ajallani:
   - Cities Skylines on myöskin ehdottomasti hyvä peli rentoutumiseen.
 - Heittelen frisbeegolfia
 
-{{< youtube id="dQw4w9WgXcQ" autoplay="true" >}}
+Verkostoidun mielelläni kanssasi [Linkedinissä!](https://linkedin.com/in/lamtonylam)

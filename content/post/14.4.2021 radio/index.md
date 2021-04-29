@@ -39,7 +39,6 @@ Aiemmin soinut radiossa:
 Tämänhetkinen kappalejono:
 <iframe class="airtable-embed" src="https://airtable.com/embed/shr4F456wRiIzxN2R?backgroundColor=orange&layout=card" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 <br>
-<br>
 
 Yleisesti ottaen soitamme noin 5 kappaletta joka perjantai.  
 Nyt hybridi-mallissa soittamistahti on tilapäisesti hitaampi kuin normaalisti.

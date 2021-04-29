@@ -21,5 +21,5 @@ design:
 
 <center>
 <iframe src="https://ruokalistat.azurewebsites.net/#/8cfdbfde-ea98-e511-9417-00215a9c1ca7" width="65%" height="350" loading="lazy" frameborder="0" marginheight="0" marginwidth="0">
-Loading...</iframe>
+</iframe>
 </center>

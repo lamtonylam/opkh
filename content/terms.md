@@ -28,3 +28,5 @@ Verkkosivut voivat olla ajoittain alhaalla tai rikki. Emme vastaa aiheutuneesta 
 Hellun OPKH ei takaa sitä, että tämän verkkosivuston aineisto soveltuu johonkin tiettyyn käyttötarkoitukseen eikä se vastaa mahdollisesta vahingosta, jonka sivustojen sisältämän tiedon käyttäminen tai hyödyntäminen voi mahdollisesti aiheuttaa.
 
 Mikäli verkkosivustolla on kolmannen osapuolen sisältämäää sisältöä, emme ole vastuussa jos niiden käytöstä tulee mahdollisia vahinkoja tai haittaa. Kolmannen osapuolen sivujen käyttäminen tulee tapahtumaan täysin käyttäjän omalla vastuulla. Hellun OPKH ei ole myöskään vastuussa kolmannen osapuolen sisällöstä tai sen oikeellisuutta.
+
+<meta name="robots" content="noindex">

@@ -1,5 +1,5 @@
 ---
-title: Privacy Policy
+title: Yksityisyyskäytäntö
 date: "2018-06-28T00:00:00+01:00"
 draft: false
 share: false
@@ -11,32 +11,44 @@ header:
   caption: ""
   image: ""
 ---
-The user has the choice to accept the use of cookies that are not mandatory for the function of the website. However, the website uses cookies that are deemed essential for the proper function of the site. The user has no control over these. This is compliant with European Union's strict cookie law.
+Sivuston käyttäjällä on oikeus hyväksyä tai kieltäytyä ei tarpeellisten evästeiden käytöstä. Kuitenkin käyttäjä ei voi kieltäytyä sivuston toiminnallisuuden kannalta tarpeellisilta evästeiltä.
 
-To use this website, there is no need for the user to signup for anything or give any personally identifiable information. If the user has given personal information through e.g. contact form, he or she has the ability to request this information or perhaps delete them. This is compliant with GDPR-rules. This power is given only to citizens and inhabitants of the EU or EEA. 
+Käyttääkseen sivustoa, käyttäjän ei ole pakko antaa yhtään henkilötietoja.  
+Jos käyttäjä kuitenkin antaa tietoja, on hänellä oikeus pyytää niitä katso: https://opkh.fi/GDPR
 
-Personal data that you may input to the site may be transferred outside the EU and EEA. This is because our hosting provider's CDN infrastructure is worldwide. Inputted data may take many hops and hoops around the globe.
+Tietoja voidaan käsitellä EU:n ja EEA:n ulkopuolella. Tämä johtuu siitä, että jotkut 3. osapuolen palvelimet sijaitsevat EU:n ja EEA:n ulkopuolella.
 
-This site uses 3rd party trackers that use cookies.
+Kerättyjä tietoja käytetään vain analytiikkaan, sivuston toiminnan takaamiseksi sekä käyttäjäkokemuksen parantamiseksi.
 
+Kolmannen osapuolen palvelut sivustolla:
 - Statcounter (analytics)
 - Google Analytics (analytics)
 - Yandex Metrika (analytics)
 - Leadfeeder (lead generation)
 - Clarity.ms (analytics)
-- Fullstory (analytics and bug tracking)
+- Fullstory (analytics ja bugien seuraaminen)
 - Hotjar (analytics)
-
-3rd party services that may use cookies.
-- Google Maps (maps) (essential)
-- Netlify (Back-end server) (essential)
-- Loom (video embed) (essential)
-- Instagram embed (social media) (essential)
-- Youtube embed (social media) (essential) using Youtube's privacy mode https://support.google.com/youtube/answer/171780?hl=en#zippy=%2Cturn-on-privacy-enhanced-mode
 - Tawk.to (chat widget)
-- Typeform (forms)
 
-From gathered data, it is not possible to identify a single person.
-We will never sell any data to 3rd parties. All data is for analytical purposes only.
+Sivuston toiminnallisuuden kannalta tarpeelliset evästeet:
+- Google Maps (kartta) (tarpeellinen)
+- Netlify (Back-end server) (tarpeellinen)
+- Loom (video) (tarpeellinen)
+- Instagram embed (social media) (tarpeellinen)
+- Youtube embed (social media) (tarpeellinen) käyttäen tietosuoja-asetusta https://support.google.com/youtube/answer/171780?hl=en#zippy=%2Cturn-on-privacy-enhanced-mode
+- Typeform (lomake) (tarpeellinen)
 
-For further questions about privacy please contact our privacy representative: tony@opkh.fi
+Kerätyt tiedot jos käyttäjä sallii evästeet:
+- IP-osoite
+- Käyntikerrat
+- Mitä opkh.fi sivuja selaat
+- Vierailun aikaleima
+- Vierailun pituus
+- Näytön resoluutio
+- Käyttöjärjestelmä
+- Android-puhelinmalli
+- Selain ja versio
+- Mistä lähteestä tulit, esim. Instagram tai Linkedin
+- Mitä käyttäjä tekee sivustolla, kuitenkin yksityisyys huomioiden iFrame ja input-boksit ovat sensuroituja
+
+Kysyttävää? info@opkh.fi

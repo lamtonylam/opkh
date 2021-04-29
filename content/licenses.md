@@ -10,3 +10,4 @@ editable: false
 - [Font Awesome](https://fontawesome.com/license/free)
 - [Hugo](https://gohugo.io/)
 
+<meta name="robots" content="noindex">
