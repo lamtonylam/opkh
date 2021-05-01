@@ -14,14 +14,14 @@
   weight = 20
 
 [[main]]
-  name = "Tiimi"
-  url ="/people"
-  weight = 30
-
-[[main]]
   name = "Helluradio"
   url ="/radio"
   weight = 31
+
+[[main]]
+  name = "Tiimi"
+  url ="/people"
+  weight = 32
 
 [[main]]
   name = "Tapahtumat"
