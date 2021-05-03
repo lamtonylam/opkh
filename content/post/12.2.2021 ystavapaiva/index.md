@@ -20,7 +20,7 @@ url: "/ystavanpaiva"
 ### Hellu crush rakkaustesteri:
 ###### Testaa rakkautesi yhteensopivuus 😘💘
 [https://love.opkh.fi](https://love.opkh.fi/?utm_source=verkkosivu)
-[![Kuva](crush.png)](https://love.opkh.fi/?utm_source=verkkosivukuva)
+[![Kuva](crush.webp)](https://love.opkh.fi/?utm_source=verkkosivukuva)
 <br>
 
 ### Spotify-soittolista

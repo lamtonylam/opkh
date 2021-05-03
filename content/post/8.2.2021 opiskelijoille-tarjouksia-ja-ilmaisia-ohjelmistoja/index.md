@@ -78,4 +78,4 @@ https://www.studentbeans.com/student-discount/us/hostinger
 
 https://www.myunidays.com/FI/fi-FI
 
-{{< figure src="kuva.png" title="Unidayssin alennukset" lightbox="false" >}}
+{{< figure src="kuva.webp" title="Unidayssin alennukset" lightbox="false" >}}

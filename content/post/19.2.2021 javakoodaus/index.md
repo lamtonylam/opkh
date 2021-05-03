@@ -33,24 +33,24 @@ webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolu
 Tässä latauslinkki Javan versioon 8  
 https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot
 
-{{< figure src="Näyttökuva 2021-02-19 144925.png" lightbox="false" >}}
+{{< figure src="Näyttökuva 2021-02-19 144925.webp" lightbox="false" >}}
 
 ### Ohjeet vielä kirjallisesti:  
 **1. Poista edellinen Java-versio tietokoneesta**   
 Mene ohjauspaneeliin ja paina "poista asennettu ohjelma"
-{{< figure src="Näyttökuva 2021-02-21 190808.png">}}
+{{< figure src="Näyttökuva 2021-02-21 190808.webp">}}
 
 **2. Etsi Java-asennus ja poista se**
-{{< figure src="Näyttökuva 2021-02-21 221337.png" >}}
+{{< figure src="Näyttökuva 2021-02-21 221337.webp" >}}
 
 **3. Lataa Java-versio 8.**
-{{< figure src="Näyttökuva 2021-02-19 144925.png" >}}
+{{< figure src="Näyttökuva 2021-02-19 144925.webp" >}}
 
 **4. Asenna Java**  
 "Custom setup" vaiheessa, paina ruksista.  
 Valitse kohta "Entire feature will be installed on local hard drive"  
 Tee näin lopuille rukseille.
-{{< figure src="Näyttökuva 2021-02-21 221548.png" >}}
+{{< figure src="Näyttökuva 2021-02-21 221548.webp" >}}
 Paina sitten "next".  
 Valmista! Kokeile nyt pyörittämään testit koodillesi! Niiden pitäisi toimia.  
 Jos et saanut toimimaan pelkillä kirjallisilla ohjeilla, katso ohjevideo joka löytyy sivun yläosasta.  

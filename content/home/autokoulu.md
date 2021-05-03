@@ -27,8 +27,8 @@ design:
 <!--- #### [Lue lisää yhteistyöstämme:](/autokoulu)  
 <br> --->
 
-[![Epic Autokoulu](https://www.epicautokoulu.fi/wp-content/uploads/2013/07/asAsset-3-1.png)](https://www.epicautokoulu.fi/helsinki/)
-
+<a href="https://www.epicautokoulu.fi/helsinki" target="_blank">
+{{< figure src="epic_autokoulu-2020.webp" lightbox="false" width="30%"  >}}</a>
 
 
 </center>
