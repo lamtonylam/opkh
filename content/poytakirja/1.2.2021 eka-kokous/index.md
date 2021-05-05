@@ -11,7 +11,7 @@ image:
   preview_only: false
 
 categories: ["kirja"]
-authors: ["tony"]
+authors: ["admin"]
 url: "/eka-kokous"
 ---
 Helsingin Luonnontiedelukion opiskelijakunnan hallituksen kokous 22.1.2021

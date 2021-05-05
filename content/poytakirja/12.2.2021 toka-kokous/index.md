@@ -11,7 +11,7 @@ image:
   preview_only: false
 
 categories: ["kirja"]
-authors: ["tony"]
+authors: ["admin"]
 url: "/toka-kokous"
 ---
 Läsnäolijat:
@@ -26,8 +26,6 @@ päätösvaltaiseksi
 5. Käsiteltävät asiat
 	1. Ystävänpäivä 
 		Nettisivuille laitetaan rakkausaiheinen helluradio ja Instagramiin tehdään päivitys. Viikkotiedotteessa kerrotaan nettisivusta. Nettisivulle laitetaan myös yhteensopivuuslaskuri.
-	2. Nasukeskustelu
-		Keskustelussa tuotiin esille, että **[REDACTED]**.
 	3. OPK-päivät
 		Järjestetään 11.2.2021 klo 12-14.
 	4. Talent directory

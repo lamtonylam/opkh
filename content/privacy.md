@@ -52,3 +52,5 @@ Kerätyt tiedot jos käyttäjä sallii evästeet:
 - Mitä käyttäjä tekee sivustolla, kuitenkin yksityisyys huomioiden iFrame ja input-boksit ovat sensuroituja
 
 Kysyttävää? info@opkh.fi
+
+<meta name="robots" content="noindex">

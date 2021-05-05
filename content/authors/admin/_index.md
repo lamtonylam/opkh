@@ -82,6 +82,3 @@ Muistathan käydä seuraamassa meitä myös **[Instagramissa](https://instagram.
 <sub><sup>
 Helsingin luonnontiedelukio, opiskelijakunta, opiskelijakunnan hallitus, Hellun OPKH
 </sup></sub>
-
-
-<meta name="robots" content="noindex">
