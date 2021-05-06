@@ -52,7 +52,3 @@ Jokaisella rekisterissä olevalla henkilöllä on oikeus tarkistaa rekisteriin t
 
 ### 10. Muut henkilötietojen käsittelyyn liittyvät oikeudet
 Rekisterissä olevalla henkilöllä on oikeus pyytää häntä koskevien henkilötietojen poistamiseen rekisteristä. Niin ikään rekisteröidyillä on muut EU:n yleisen tietosuoja-asetuksen mukaiset oikeudetkuten henkilötietojen käsittelyn rajoittaminen tietyissä tilanteissa. Pyynnöt tulee lähettää kirjallisesti rekisterinpitäjälle. Rekisterinpitäjä voi pyytää tarvittaessa pyynnön esittäjää todistamaan henkilöllisyytensä. Rekisterinpitäjä vastaa asiakkaalle EU:n tietosuoja-asetuksessa säädetyssä ajassa, eli pääsääntöisesti kuukauden kuluessa.
-
-
-
-<meta name="robots" content="noindex">

@@ -9,5 +9,3 @@ editable: false
 - [Wowchemy](https://github.com/wowchemy/wowchemy-hugo-modules)
 - [Font Awesome](https://fontawesome.com/license/free)
 - [Hugo](https://gohugo.io/)
-
-<meta name="robots" content="noindex">
