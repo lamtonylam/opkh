@@ -26,29 +26,29 @@ Kolmannen osapuolen palvelut sivustolla:
 - Yandex Metrika (analytics)
 - Leadfeeder (lead generation)
 - Clarity.ms (analytics)
-- Fullstory (analytics ja bugien seuraaminen)
-- Hotjar (analytics)
 - Tawk.to (chat widget)
 
 Sivuston toiminnallisuuden kannalta tarpeelliset evästeet:
+- Cloudflare (Palvelin) (tarpeellinen)
 - Google Maps (kartta) (tarpeellinen)
 - Netlify (Back-end server) (tarpeellinen)
 - Loom (video) (tarpeellinen)
 - Instagram embed (social media) (tarpeellinen)
 - Youtube embed (social media) (tarpeellinen) käyttäen tietosuoja-asetusta https://support.google.com/youtube/answer/171780?hl=en#zippy=%2Cturn-on-privacy-enhanced-mode
 - Typeform (lomake) (tarpeellinen)
+- Mailerlite (lomake) (tarpeellinen)
 
 Kerätyt tiedot jos käyttäjä sallii evästeet:
-- IP-osoite
 - Käyntikerrat
+- Virhelokit
 - Mitä opkh.fi sivuja selaat
 - Vierailun aikaleima
 - Vierailun pituus
 - Näytön resoluutio
 - Käyttöjärjestelmä
 - Android-puhelinmalli
-- Selain ja versio
+- Selain
+- IP-osoite
 - Mistä lähteestä tulit, esim. Instagram tai Linkedin
-- Mitä käyttäjä tekee sivustolla, kuitenkin yksityisyys huomioiden iFrame ja input-boksit ovat sensuroituja
 
 Kysyttävää? info@opkh.fi
