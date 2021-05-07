@@ -56,7 +56,7 @@ description = ""
 
 # Enable source code highlighting? true/false
 # Documentation: https://wowchemy.com/docs/writing-markdown-latex/#highlighting-options
-highlight = true
+highlight = false
 highlight_languages = ["r"]  # Add support for highlighting additional languages
 # highlight_style = "github"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
 
@@ -100,7 +100,7 @@ address = {street = "Mäkelänkatu 84", city = "Helsinki", region = "", postcode
 coordinates = {latitude = "60.210378", longitude = "24.943564"}
 
 # Directions for visitors to locate you.
-directions = "OPKH-huoneen löydät toisesta kerroksesta, luokka 225"
+directions = "Työväenhuoneen löydät toisesta kerroksesta, luokka 225."
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
