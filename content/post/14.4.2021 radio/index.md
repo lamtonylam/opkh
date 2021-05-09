@@ -34,7 +34,7 @@ Viimeksi soinut radiosssa:
 
 
 Tämänhetkinen kappalejono:
-<iframe class="airtable-embed" src="https://airtable.com/embed/shr4F456wRiIzxN2R?backgroundColor=orange&layout=card" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;" loading="lazy"></iframe>
+<iframe class="airtable-embed" src="https://airtable.com/embed/shr4F456wRiIzxN2R?backgroundColor=orange&layout=card" frameborder="0" onmousewheel="" width="100%" height="350" style="background: transparent; border: 1px solid #ccc;" loading="lazy"></iframe>
 <br>
 
 Soitamme 5 kappaletta joka perjantai.

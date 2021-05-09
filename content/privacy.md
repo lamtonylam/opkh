@@ -27,6 +27,7 @@ Kolmannen osapuolen palvelut sivustolla:
 - Leadfeeder (lead generation)
 - Clarity.ms (analytics)
 - Tawk.to (chat widget)
+- Hubspot (lead generation)
 
 Sivuston toiminnallisuuden kannalta tarpeelliset evästeet:
 - Cloudflare (Palvelin) (tarpeellinen)
