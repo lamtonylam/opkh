@@ -1,7 +1,7 @@
 ---
 title: Opiskelijoille tarjouksia ja ilmaisia ohjelmistoja
-subtitle: Miksi maksaa turhasta?
-summary: Miksi maksaa turhasta?
+subtitle:
+summary: Ou jee.
 date: 2021-02-19
 draft: false
 featured: false
