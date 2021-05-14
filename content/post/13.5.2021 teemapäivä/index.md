@@ -32,7 +32,7 @@ Tiistaina järjestetään jo pitkään toivottu liikennevalopäivä! Pukeudu oma
 
 ### Keskiviikko:
 
-Keskiviikkona toistetaan syksyllä Hellun naurulla täyttänyt ristiinpukeutumispäivä. Osallistu siis avoimin mielin tähän tapahtumaan, sillä OPKH myös palkitsee niitä, jotka ottavat tämän päivän todesta.
+Keskiviikkona on ristiinpukeutumispäivä. Osallistu siis avoimin mielin tähän tapahtumaan, sillä OPKH myös palkitsee niitä, jotka ottavat tämän päivän todesta
 
 ### Torstai:
 
