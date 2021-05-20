@@ -40,4 +40,4 @@ Torstaina muistelemme pitkää etäopetusjaksoa etäkoulupäivällä! Pukeudu ta
 
 ### Perjantai:
 
-Perjantai päättää viikon vakavampaan tyyliin. Kunnioitetaan eläköityvää rehtoriamme Timon läksiäispukeutumisella. Pukeudu siis kuin vaikka kesäjuhliin tai juhlavaan tapahtumaan.
+Kunnioittakaamme edesmennyttä opiskelijaa halutessamme siistillä tummalla vaatetuksella tai muulla kunnioittavalla pukeutumisella. Osaanotot opiskelijan läheisille ja ystäville kaikkien luonnontiedelukion opiskelijoiden ja työntekijöiden puolesta!
