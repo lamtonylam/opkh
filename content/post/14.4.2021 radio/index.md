@@ -1,7 +1,7 @@
 ---
 title: Helluradio
 subtitle: Helluradioon ehdotuksia sekä soitettujen biisien lista.
-date: 2021-05-07
+date: 2021-05-25
 summary: Helluradioon ehdotuksia sekä soitettujen biisien lista.
 draft: false
 featured: false
