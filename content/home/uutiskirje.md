@@ -27,6 +27,3 @@ design:
 <div data-tf-chat data-tf-widget="mHuVyoEU" style="width:100%;height:400px"></div><script src="//embed.typeform.com/next/embed.js"></script>
 
 </center>
-
-  <link rel="dns-prefetch" href="https://typeform.com/">
-  <link rel="preconnect" href="https://typeform.com/" crossorigin>

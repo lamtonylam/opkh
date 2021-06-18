@@ -28,5 +28,3 @@ Loading...</iframe>
 
 </center>
 
-  <link rel="dns-prefetch" href="https://ruokalistat.azurewebsites.net/">
-  <link rel="preconnect" href="https://ruokalistat.azurewebsites.net/" crossorigin>
