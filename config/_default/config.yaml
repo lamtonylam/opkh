@@ -1,0 +1,87 @@
+title: Hellun OPKH | Helsingin luonnontiedelukio
+baseurl: 'https://opkh.fi/'
+copyright: '&copy; Hellun OPKH {year} '
+enableGitInfo: false
+defaultContentLanguage: fi
+hasCJKLanguage: false
+defaultContentLanguageInSubdir: false
+removePathAccents: true
+summaryLength: 30
+paginate: 10
+enableEmoji: true
+enableRobotsTXT: true
+footnotereturnlinkcontents: <sup>^</sup>
+ignoreFiles:
+  - \.ipynb$
+  - .ipynb_checkpoints$
+  - \.Rmd$
+  - \.Rmarkdown$
+  - _cache$
+permalinks:
+  event: '/talk/:slug/'
+  tags: '/tag/:slug/'
+  categories: '/category/:slug/'
+  publication_types: '/publication-type/:slug/'
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+    - WebAppManifest
+    - headers
+    - redirects
+  section:
+    - HTML
+    - RSS
+mediaTypes:
+  application/manifest+json:
+    suffixes:
+      - webmanifest
+outputFormats:
+  WebAppManifest:
+    mediaType: application/manifest+json
+    rel: manifest
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+imaging:
+  resampleFilter: lanczos
+  quality: 80
+  anchor: smart
+taxonomies:
+  author: authors
+  tag: tags
+  category: categories
+  publication_type: publication_types
+related:
+  threshold: 80
+  includeNewer: true
+  toLower: true
+  indices:
+    - name: title
+      weight: 60
+    - name: summary
+      weight: 50
+    - name: tags
+      weight: 80
+    - name: categories
+      weight: 70
+    - name: authors
+      weight: 20
+module:
+  imports:
+    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms/v5
+    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5
+privacy:
+  youtube:
+    privacyEnhanced: true
+    timeout: 60000
+
+
