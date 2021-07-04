@@ -1,0 +1,127 @@
+theme: minimal
+day_night: true
+font: ''
+font_size: XL
+site_type: Organization
+local_business_type: ''
+org_name: ''
+description: ''
+highlight: false
+highlight_languages:
+  - r
+math: false
+diagram: false
+privacy_pack: false
+edit_page:
+  repo_url: ''
+  content_dir: ''
+  repo_branch: main
+  editable:
+    page: false
+    post: false
+    book: false
+show_related:
+  book: false
+  page: false
+  post: false
+  project: false
+  publication: false
+  talk: false
+email: info@opkh.fi
+phone: ''
+address:
+  street: Mäkelänkatu 84
+  city: Helsinki
+  region: ''
+  postcode: '00610'
+  country: Finland
+  country_code: FI
+coordinates:
+  latitude: '60.210378'
+  longitude: '24.943564'
+directions: 'Työväenhuoneen löydät toisesta kerroksesta, luokka 225.'
+office_hours: []
+appointment_url: ''
+contact_links:
+  - icon: map-marked-alt
+    icon_pack: fas
+    name: Reittiohjeet Google Maps
+    link: >-
+      https://www.google.com/maps/dir//Helsingin+luonnontiedelukio,+M%C3%A4kel%C3%A4nkatu+84,+00610+Helsinki/@60.2104756,24.9414611,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x469209961c9c2b83:0xfa195041d70b9d60!2m2!1d24.9436498!2d60.2104756
+  - icon: bus-alt
+    icon_pack: fas
+    name: Reittiohjeet HSL
+    link: >-
+      https://reittiopas.hsl.fi/reitti/-/Helsingin%20luonnontiedelukio%2C%20K%C3%A4pyl%C3%A4%2C%20Helsinki%3A%3A60.210268%2C24.943388?arriveBy=false&locale=fi
+  - icon: instagram
+    icon_pack: fab
+    name: 'Hellun OPKH:n Instagram'
+    link: 'https://instagram.com/hellu_opkh'
+twitter: lamtonylam
+date_format: "02.01.2006\t"
+time_format: '15:04'
+address_format: fi
+main_menu:
+  align: l
+  show_logo: true
+  highlight_active_link: true
+  show_language: false
+  show_day_night: true
+  show_search: true
+reading_time: true
+section_pager: false
+docs_section_pager: true
+sharing: true
+copyright_license:
+  enable: false
+  allow_derivatives: false
+  share_alike: true
+  allow_commercial: false
+  notice: 'This work is licensed under {license}'
+abstract_length: 135
+plugins_js: []
+avatar:
+  gravatar: false
+  shape: circle
+publications:
+  date_format: January 2006
+  citation_style: apa
+projects:
+  post_view: 2
+  publication_view: 2
+  talk_view: 2
+comments:
+  engine: 3
+  commentable:
+    page: true
+    post: true
+    docs: true
+    project: true
+    publication: true
+    talk: true
+  disqus:
+    shortname: ''
+    show_count: false
+  commento:
+    url: ''
+search:
+  provider: ''
+  algolia:
+    app_id: ''
+    api_key: ''
+    index_name: ''
+    show_logo: false
+map:
+  engine: 0
+  api_key: ''
+  zoom: 15
+marketing:
+  google_analytics: ''
+  google_tag_manager: ''
+  microsoft_clarity: ''
+cms:
+  netlify_cms: true
+  branch: master
+icon:
+  pack:
+    ai: false

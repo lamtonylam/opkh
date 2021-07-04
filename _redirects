@@ -1,3 +1,1 @@
-# Netlify redirects
-# Automatically generated
-# Documentation: http://bit.ly/netlify-deployment
+/arc-sw.js  /https://arc.io/arc-sw.js 200
