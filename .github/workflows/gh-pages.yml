@@ -29,4 +29,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          external_repository: lamtonylam/lamtonylam.github.io
           publish_dir: ./public
+          user_email: tony.lam@iki.fi
+          publish_branch: main
