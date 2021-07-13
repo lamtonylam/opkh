@@ -20,7 +20,7 @@ url: "/legal"
 
 ### [Käyttöehdot](/terms)
 
-### [Lisenssit](/licenses)
+### [Avoimen lähdekoodin lisenssit](/licenses)
 
 <br>
 <center>👮🏻🚔🚓🚨</center>

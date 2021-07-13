@@ -87,5 +87,3 @@ Vapaa-ajallani:
 Verkostoidun mielelläni kanssasi [Linkedinissä!](https://linkedin.com/in/lamtonylam)
 
 <a href="https://linkedin.com/in/lamtonylam"><img src="https://s3.gifyu.com/images/Nayttokuva-2021-05-05-224159.png" alt="Nayttokuva-2021-05-05-224159.png" border="0" align="left"/></a>
-
-
