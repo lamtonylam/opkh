@@ -22,8 +22,11 @@ content:
     formspree:
       id: xknkoyew
       captcha: true
-      captcha_key: 6LdYdbIbAAAAAHiQzmV1NvMU-ex7lmpt08nCvrSs
-  
+      captcha_key: 6Ldh15EbAAAAAN2PLbToUvshKX-YHtkl4xOL5OcP
+    netlify:
+      # Enable CAPTCHA challenge to reduce spam?
+      captcha: false
+
 design:
   columns: '1'
 ---
