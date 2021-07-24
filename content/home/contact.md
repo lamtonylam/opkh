@@ -22,7 +22,7 @@ content:
     formspree:
       id: xknkoyew
       captcha: true
-      captcha_key: 6Ldh15EbAAAAAN2PLbToUvshKX-YHtkl4xOL5OcP
+      captcha_key: 6LdYdbIbAAAAAHiQzmV1NvMU-ex7lmpt08nCvrSs
     netlify:
       # Enable CAPTCHA challenge to reduce spam?
       captcha: false
