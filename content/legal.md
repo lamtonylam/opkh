@@ -21,7 +21,3 @@ url: "/legal"
 ### [Käyttöehdot](/terms)
 
 ### [Avoimen lähdekoodin lisenssit](/licenses)
-
-<br>
-<center>👮🏻🚔🚓🚨</center>
-<div style="padding: 56.25% 0px 0px; position: relative;"><iframe src="https://www.youtube.com/embed/bBD8M3WFrAw?color=white&disablekb=1&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="auto"  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>YouTube embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe></div>

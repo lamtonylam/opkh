@@ -1,5 +1,5 @@
 ---
-title: Yksityisyyskäytäntö
+title: Yksityisyys
 date: "2018-06-28T00:00:00+01:00"
 draft: false
 share: false
@@ -14,11 +14,17 @@ header:
 Sivuston käyttäjällä on oikeus hyväksyä tai kieltäytyä ei tarpeellisten evästeiden käytöstä. Kuitenkin käyttäjä ei voi kieltäytyä sivuston toiminnallisuuden kannalta tarpeellisilta evästeiltä.
 
 Käyttääkseen sivustoa, käyttäjän ei ole pakko antaa yhtään henkilötietoja.  
-Jos käyttäjä kuitenkin antaa tietoja, on hänellä oikeus pyytää niitä katso: https://opkh.fi/GDPR
+Jos käyttäjä kuitenkin antaa tietoja, on hänellä oikeus pyytää niitä katso: https://opkh.fi/gdpr
+
+Jos olet hyväksynyt evästeet, mutta haluat muuttaa mielesi, katso linkeistä miten poistaa evästeet verkkoselaimesta.  
+Chrome: https://support.google.com/chrome/answer/95647  
+Firefox: https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox  
+Microsoft Edge: https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09  
+Safari: https://support.apple.com/fi-fi/guide/safari/sfri11471/mac  
 
 Tietoja voidaan käsitellä EU:n ja EEA:n ulkopuolella. Tämä johtuu siitä, että jotkut 3. osapuolen palvelimet sijaitsevat EU:n ja EEA:n ulkopuolella.
 
-Kerättyjä tietoja käytetään vain analytiikkaan, sivuston toiminnan takaamiseksi sekä käyttäjäkokemuksen parantamiseksi.
+Kerättyjä tietoja käytetään vain analytiikkaan, sivuston toiminnan takaamiseksi, markkinointiin sekä käyttäjäkokemuksen parantamiseksi.
 
 Kolmannen osapuolen palvelut sivustolla:
 - Statcounter (analytics)
@@ -28,6 +34,7 @@ Kolmannen osapuolen palvelut sivustolla:
 - Clarity.ms (analytics)
 - Tawk.to (chat widget)
 - Hubspot (lead generation)
+- Clearbit (lead generation)
 
 Sivuston toiminnallisuuden kannalta tarpeelliset evästeet:
 - Cloudflare (Palvelin) (tarpeellinen)
