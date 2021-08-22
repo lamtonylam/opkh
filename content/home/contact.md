@@ -10,7 +10,7 @@ headless: true
 weight: 130
 
 title: Ota yhteyttä!
-subtitle: Jos haluat lähettää viestisi tietylle jäsenelle, mainitsethan kenelle!  Tiimimme löydät **[täältä!](/people)**
+subtitle: Jos haluat lähettää viestisi tietylle jäsenelle, mainitsethan kenelle!
 
 content:
   # Automatically link email and phone or display as text?

@@ -43,16 +43,16 @@ directions: 'Työväenhuoneen löydät toisesta kerroksesta, luokka 225.'
 office_hours: []
 appointment_url: ''
 contact_links:
-  - icon: map-marked-alt
-    icon_pack: fas
-    name: Reittiohjeet Google Maps
-    link: >-
-      https://www.google.com/maps/dir//Helsingin+luonnontiedelukio,+M%C3%A4kel%C3%A4nkatu+84,+00610+Helsinki/@60.2104756,24.9414611,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x469209961c9c2b83:0xfa195041d70b9d60!2m2!1d24.9436498!2d60.2104756
-  - icon: bus-alt
-    icon_pack: fas
-    name: Reittiohjeet HSL
-    link: >-
-      https://reittiopas.hsl.fi/reitti/-/Helsingin%20luonnontiedelukio%2C%20K%C3%A4pyl%C3%A4%2C%20Helsinki%3A%3A60.210268%2C24.943388?arriveBy=false&locale=fi
+  # - icon: map-marked-alt
+  #   icon_pack: fas
+  #   name: Reittiohjeet Google Maps
+  #   link: >-
+  #     https://www.google.com/maps/dir//Helsingin+luonnontiedelukio,+M%C3%A4kel%C3%A4nkatu+84,+00610+Helsinki/@60.2104756,24.9414611,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x469209961c9c2b83:0xfa195041d70b9d60!2m2!1d24.9436498!2d60.2104756
+  # - icon: bus-alt
+  #   icon_pack: fas
+  #   name: Reittiohjeet HSL
+  #   link: >-
+  #     https://reittiopas.hsl.fi/reitti/-/Helsingin%20luonnontiedelukio%2C%20K%C3%A4pyl%C3%A4%2C%20Helsinki%3A%3A60.210268%2C24.943388?arriveBy=false&locale=fi
   - icon: instagram
     icon_pack: fab
     name: 'Hellun OPKH:n Instagram'
