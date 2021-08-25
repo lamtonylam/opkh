@@ -1,7 +1,7 @@
 ---
 title: 
 subtitle:
-date: 2021-05-13
+date: 2021
 summary: 
 
 draft: false
