@@ -3,7 +3,7 @@ title: Hellubingo
 subtitle:
 date: 2021-08-22
 summary: Uusille ykkösille suunnattu, perinteinen Hellubingo!
-show_date: false
+show_date: true
 draft: false
 featured: false
 authors:
