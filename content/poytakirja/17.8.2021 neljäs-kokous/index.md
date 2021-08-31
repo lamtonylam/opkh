@@ -47,6 +47,10 @@ Ruutirahakyselystä laitetaan viikkotiedotteeseen ilmoitus ja jokaiselle opiskel
 
 Uudelle ohjukselle ei ole tällä hetkellä tarvetta.	
 
+**5.5. Tapahtumat**  
+Tulevia tapahtumia vanhojentanssiliikennevalopäivä (mahdollisesti),  teemaviikko jossain vaiheessa syksyä ja helluween. Tapahtumatiimi kootaan tapahtumien suunnittelua varten. Tiimin aloituskokous OPKH:n esittäytymisen jälkeen.
+
+
  **5.6. Helluvaatteet** 	
 
 Hellu-collegepaitoja ja -housuja, joita opiskelijat voivat itse ostaa. Vaatteissa näkyvä logo suunnitellaan halukkaiden kesken tai valitaan kilpailussa. Vaatteista ja niiden suunnittelusta infotaan opiskelijoille tällä viikolla. Hellukasseja voidaan harkita hankittavan myöhemmin.
