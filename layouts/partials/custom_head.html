@@ -31,22 +31,6 @@
     })(window,document,'script','dataLayer','GTM-5LGSQ2B');
   </script>
 
-
-
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/5f7b6625f0e7167d0016612e/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
-
   <style>
     html,
     body{
@@ -61,36 +45,7 @@
 
 
 
-<script>
-  window.addEventListener('load', function(){
-      
-      var manager = iframemanager();
-      
-      // Example with youtube embed
-      manager.run({
-          currLang: 'en',
-          services : {
-              youtube : {
-                  embedUrl: 'https://www.youtube-nocookie.com/embed/{data-id}',
-                  thumbnailUrl: 'https://i3.ytimg.com/vi/{data-id}/hqdefault.jpg',
-                  iframe : {
-                      allow : 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen;',
-                  },
-                  cookie : {
-                      name : 'cc_youtube'
-                  },
-                  languages : {
-                      en : {
-                          notice: 'This content is hosted by a third party. By showing the external content you accept the <a rel="noreferrer" href="https://www.youtube.com/t/terms" title="Terms and conditions" target="_blank">terms and conditions</a> of youtube.com.',
-                          loadBtn: 'Load video',
-                          loadAllBtn: 'Don\'t ask again'
-                      }
-                  }
-              }
-          }
-      });
-  });
-</script>
+
 
 </head>
 
@@ -99,93 +54,5 @@
 
 <body>
 
-  <script src="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@v1.0/dist/iframemanager.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@master/dist/cookieconsent.js"></script>
-  <script>
-    var cookieconsent = initCookieConsent();
-
-    cookieconsent.run({
-        current_lang : 'en',
-        theme_css : 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@master/dist/cookieconsent.css',
-    
-        page_scripts: true,
-
-        onAccept : function(){
-            // do something ...
-        },
-            		
-        gui_options: {
-        consent_modal : {
-            layout : 'cloud',               // box/cloud/bar
-            position : 'bottom center',     // bottom/top + left/right/center
-            transition: 'slide'             // zoom/slide
-        },
-        settings_modal : {
-            layout : 'box',                 // box/bar
-            // position : 'left',           // left/right
-            transition: 'slide'             // zoom/slide
-        },
-    },
-        languages : {
-            en : {
-                consent_modal : {
-                    title :  "Käytämme evästeitä!",
-                    description :  '<br> Voit joko hyväksyä tai kieltää ei pakollisten evästeiden käytön. <br> <br> Näitä ovat esimerkiksi analytiikan-, markkinoinnin-, tai toiminnallisuutta parantavat evästeet. <br><br>Sivuston optimaalisen toiminnan- ja käyttäjäkokemuksen takaamiseksi. <br><br> <a href="javascript:void(0);" aria-label="View cookie settings" data-cc="c-settings">Cookie Settings</a>',
-                    primary_btn: {
-                        text: 'Hyväksyn',
-                        role: 'accept_all'  //'accept_selected' or 'accept_all'
-                    },
-                    secondary_btn: {
-                        text : 'En hyväksy',
-                        role : 'accept_necessary'   //'settings' or 'accept_necessary'
-                    }
-                },
-                settings_modal : {
-                    title : '<div>Cookie settings</div><div aria-hidden="true" style="font-size: .8em; font-weight: 200; color: #687278; margin-top: 5px;">Powered by <a tabindex="-1" aria-hidden="true" href="https://github.com/orestbida/cookieconsent/" >cookie-consent</a></div>',
-                    save_settings_btn : "Save settings",
-                    accept_all_btn : "Accept all",
-                    reject_all_btn : "Reject all", // optional, [v.2.5.0 +]
-                    close_btn_label: "Close",   
-                    blocks : [
-                        {
-                            title : "Tarkemmat evästeasetukset",
-                            description: ''
-                        },{
-                            title : "Tarpeelliset evästeet",
-                            description: 'Sivuston toiminnalta välttämättömät evästeet. Näitä ei voi laittaa pois.',
-                            toggle : {
-                                value : 'necessary',
-                                enabled : true,
-                                readonly: true
-                            }
-                        },{
-                            title : "Analytiikan evästeet",
-                            description: 'Analytiikkaan. Jotta voimme paremmin ymmärtää sivustoamme.',
-                            toggle : {
-                                value : 'analytics',
-                                enabled : false,
-                                readonly: false
-                            }
-                        },{
-                            title : "Markkinoinnin ja lead generation evästeet.",
-                            description: 'Markkinointiin liityvät.',
-                            toggle : {
-                                value : 'marketing',
-                                enabled : false,
-                                readonly: false
-                            }
-                        },
-                    ]
-                }
-            }
-        }
-          
-
-    });
-    </script>
-
-<script>
-document.body.classList.toggle('c_darkmode');
-</script>
 
 </body>
