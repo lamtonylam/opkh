@@ -29,12 +29,11 @@ Kerättyjä tietoja käytetään vain analytiikkaan, sivuston toiminnan takaamis
 Kolmannen osapuolen palvelut sivustolla:
 - Statcounter (analytics)
 - Google Analytics (analytics)
-- Yandex Metrika (analytics)
 - Leadfeeder (lead generation)
 - Clarity.ms (analytics)
-- Tawk.to (chat widget)
 - Hubspot (lead generation)
 - Clearbit (lead generation)
+- Leadinfo (lead generation)
 
 Sivuston toiminnallisuuden kannalta tarpeelliset evästeet:
 - Cloudflare (Palvelin) (tarpeellinen)
@@ -44,7 +43,6 @@ Sivuston toiminnallisuuden kannalta tarpeelliset evästeet:
 - Instagram embed (social media) (tarpeellinen)
 - Youtube embed (social media) (tarpeellinen) käyttäen tietosuoja-asetusta https://support.google.com/youtube/answer/171780?hl=en#zippy=%2Cturn-on-privacy-enhanced-mode
 - Typeform (lomake) (tarpeellinen)
-- Mailerlite (lomake) (tarpeellinen)
 
 Kerätyt tiedot jos käyttäjä sallii evästeet:
 - Käyntikerrat
