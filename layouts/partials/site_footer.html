@@ -14,6 +14,8 @@
         theme_css : 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@master/dist/cookieconsent.css',
         force_consent : true,
         page_scripts: true,
+        remove_cookie_tables: true,
+        autoclear_cookies: true,
 
         onAccept : function(){
             // do something ...
@@ -78,43 +80,43 @@
                                 readonly: false
                             
                         },
-                        //     cookie_table: [
-						// 	{
-						// 		col1: '_ga',
-						// 		col2: 'google.com',
-						// 		col3: '2 years',
-						// 		col4: 'Used to distinguish users.' ,
-						// 	},
-						// 	{
-						// 		col1: '_ga_<container-id>',
-						// 		col2: 'google.com',
-						// 		col3: '2 years',
-						// 		col4: 'Used to persist session state.' ,
-						// 	},
-						// 	{
-						// 		col1: '_gid',
-						// 		col2: 'google.com',
-						// 		col3: '1 day',
-						// 		col4: 'Used to distinguish users.' ,
-						// 	},
-						// 	{
-						// 		col1: 'is_unique',
-						// 		col2: 'google.com',
-						// 		col3: '5 years',
-						// 		col4: 'This holds data on your visits to websites which use StatCounter. We solely use it to determine whether you are a first-time or returning visitor on each website and to estimate your accumulated unique visits per site. No personal information is stored in the cookie.' ,
-						// 	},
-						// 	{
-						// 		col1: 'sc_is_visitor_unique',
-						// 		col2: 'statcounter.com',
-						// 		col3: '2 years',
-						// 		col4: 'This cookie is set by the website that you visit. When it is first set, a random id is generated and stored in the cookie in order to avoid counting you as a visitor more than once (e.g. if you are on a mobile device and your IP address changes while you browse). Similarly to the is_unique cookie, this cookie also stores a count of your returning visits.' ,
-						// 	},
-						// 	{
-						// 		col1: '_clck and _clsk',
-						// 		col2: 'https://clarity.microsoft.com/',
-						// 		col4: 'Persists the Clarity User ID and preferences, unique to that site, on the browser. This ensures that behavior in subsequent visits to the same site will be attributed to the same user ID. Connects multiple page views by a user into a single Clarity session recording.' ,
-						// 	},
-						// ] 					
+                            cookie_table: [
+							{
+								col1: '_ga',
+								col2: 'google.com',
+								col3: '2 years',
+								col4: 'Used to distinguish users.' ,
+							},
+							{
+								col1: '_ga_<container-id>',
+								col2: 'google.com',
+								col3: '2 years',
+								col4: 'Used to persist session state.' ,
+							},
+							{
+								col1: '_gid',
+								col2: 'google.com',
+								col3: '1 day',
+								col4: 'Used to distinguish users.' ,
+							},
+							{
+								col1: 'is_unique',
+								col2: 'google.com',
+								col3: '5 years',
+								col4: 'This holds data on your visits to websites which use StatCounter. We solely use it to determine whether you are a first-time or returning visitor on each website and to estimate your accumulated unique visits per site. No personal information is stored in the cookie.' ,
+							},
+							{
+								col1: 'sc_is_visitor_unique',
+								col2: 'statcounter.com',
+								col3: '2 years',
+								col4: 'This cookie is set by the website that you visit. When it is first set, a random id is generated and stored in the cookie in order to avoid counting you as a visitor more than once (e.g. if you are on a mobile device and your IP address changes while you browse). Similarly to the is_unique cookie, this cookie also stores a count of your returning visits.' ,
+							},
+							{
+								col1: '_clck and _clsk',
+								col2: 'https://clarity.microsoft.com/',
+								col4: 'Persists the Clarity User ID and preferences, unique to that site, on the browser. This ensures that behavior in subsequent visits to the same site will be attributed to the same user ID. Connects multiple page views by a user into a single Clarity session recording.' ,
+							},
+						] 					
                     },{
                             title : "Markkinoinnin ja lead generation evästeet.",
                             description: 'Markkinointiin liityvät. <br><br>Palvelut: <br>Leadfeeder, Hubspot, Clearbit, Leadinfo',
@@ -124,26 +126,26 @@
                                 readonly: false
                             
                         },
-                            // cookie_table: [
-							// {
-							// 	col1: '_lfa',
-							// 	col2: 'leadfeeder.com',
-							// 	col3: '2 years',
-							// 	col4: 'The Tracker cookie is set for the website domain only and is used to set a unique identifier to separate different visitors. The cookie is called _lfa and has a two-year expiry date from when it is first set. Leadfeeder does not use any 3rd party cookies.' ,
-							// },
-							// {
-							// 	col1: '__hstc',
-							// 	col2: 'hubspot.com',
-							// 	col3: '13 months',
-							// 	col4: 'It contains the domain, utk, initial timestamp (first visit), last timestamp (last visit), current timestamp (this visit), and session number (increments for each subsequent session).' ,
-							// },
-							// {
-							// 	col1: '__hssc',
-							// 	col2: 'hubspot.com',
-							// 	col3: '13 months',
-							// 	col4: 'This cookie keeps track of a visitor identity. It is passed to HubSpot on form submission and used when deduplicating contacts.' ,
-							// }
-						// ] 					
+                            cookie_table: [
+							{
+								col1: '_lfa',
+								col2: 'leadfeeder.com',
+								col3: '2 years',
+								col4: 'The Tracker cookie is set for the website domain only and is used to set a unique identifier to separate different visitors. The cookie is called _lfa and has a two-year expiry date from when it is first set. Leadfeeder does not use any 3rd party cookies.' ,
+							},
+							{
+								col1: '__hstc',
+								col2: 'hubspot.com',
+								col3: '13 months',
+								col4: 'It contains the domain, utk, initial timestamp (first visit), last timestamp (last visit), current timestamp (this visit), and session number (increments for each subsequent session).' ,
+							},
+							{
+								col1: '__hssc',
+								col2: 'hubspot.com',
+								col3: '13 months',
+								col4: 'This cookie keeps track of a visitor identity. It is passed to HubSpot on form submission and used when deduplicating contacts.' ,
+							}
+						] 					
                         },{
 						title : "More information",
 						description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="mailto:privacy@opkh.fi">contact us at privacy@opkh.fi</a>.',
