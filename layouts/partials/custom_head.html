@@ -85,7 +85,7 @@
             en : {
                 consent_modal : {
                     title :  "Käytämme evästeitä!",
-                    description :  'Voit joko hyväksyä tai kieltää ei tarpeellisten evästeiden käytön. <br> <br> Näitä ovat esimerkiksi analytiikan-, markkinoinnin-, tai toiminnallisuutta parantavat evästeet. <br><br> Valitsemalla "Evästeasetukset" voit tehdä tarkempia valintoja antamiisi suostumuksiin tai saada lisää tietoa evästeistä. Voit aina muuttaa valintojasi, kuten peruuttaa suostumuksen, valitsemalla sivun pohjalta "Muokkaa evästeasetuksia". <br><br><a href="javascript:void(0);" aria-label="View cookie settings" data-cc="c-settings">Evästeasetukset:</a>',
+                    description :  '<br> Evästeet ovat esimerkiksi analytiikan-, markkinoinnin-, tai toiminnallisuutta parantavat evästeet. <br><br> Valitsemalla "Evästeasetukset" voit tehdä tarkempia valintoja suostumuksiin tai saada lisää tietoa evästeistä ja käytetyistä palveluista. Voit aina halutessasi muuttaa valintojasi, kuten peruuttaa suostumuksen, valitsemalla sivun pohjalta "Muokkaa evästeasetuksia".',
                     primary_btn: {
                         text: 'Hyväksyn',
                         role: 'accept_all'  //'accept_selected' or 'accept_all'
@@ -109,11 +109,11 @@
 				],
                     blocks : [
                         {
-                            title : "Tarkemmat evästeasetukset",
+                            title : "Evästeasetukset",
                             description: ''
                         },{
                             title : "Tarpeelliset evästeet",
-                            description: 'Sivuston toiminnalta välttämättömät evästeet. Näitä ei voi laittaa pois. <br><br>Palvelut: <br> Cloudflare, Utteranc.es commenting, Airtable, Google Recaptcha v2',
+                            description: 'Sivuston toiminnalta välttämättömät evästeet. Nämä ovat aina päällä. <br><br>Palvelut: <br> Cloudflare, Utteranc.es commenting, Airtable, Google Recaptcha v2',
                             toggle : {
                                 value : 'necessary',
                                 enabled : true,
@@ -195,8 +195,11 @@
 							}
 						] 					
                         },{
-						title : "More information",
-						description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="mailto:privacy@opkh.fi">contact us at privacy@opkh.fi</a>.',
+                        title: "EU:n GDPR-laki koskien tietosuojaa ja evästeitä:",
+                        description: "OPKH:n sivusto noudattaa parhaansa mukaan EU:n asettamia lakeja koskien yksityishenkilöiden yksityisyyttä.",
+                    },{
+						title : "Kysyttävää?",
+						description: 'Kaikkeen yksityisyyteen tai evästeisiin liittyvissä yhteydenotoissa voit ottaa yhteyttä: <a class="cc-link" href="mailto:privacy@opkh.fi">privacy@opkh.fi</a>.',
 					}
                     ]
                 }

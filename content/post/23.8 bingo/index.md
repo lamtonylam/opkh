@@ -4,7 +4,7 @@ subtitle:
 date: 2021-08-22
 summary: Uusille ykkösille suunnattu, perinteinen Hellubingo!
 show_date: true
-draft: false
+draft: true
 featured: false
 authors:
   - tony
