@@ -60,13 +60,16 @@
     cookieconsent.run({
         current_lang : 'en',
         theme_css : '/keksi.css',
-        force_consent : true,
         page_scripts: true,
         remove_cookie_tables: true,
         autoclear_cookies: true,
 
         onAccept : function(){
-            // do something ...
+            console.log("Accepted!");
+        },
+
+        onChange: function(){
+            console.log("Changed!");
         },
             		
         gui_options: {
