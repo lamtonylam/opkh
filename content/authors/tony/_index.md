@@ -88,6 +88,4 @@ Verkostoidun mielelläni kanssasi [Linkedinissä!](https://linkedin.com/in/lamto
 
 <a href="https://spotify-github-profile.vercel.app/api/view?uid=le7cq1olyeuvjxgd17jtnno1f&amp;redirect=true"><img src="https://spotify-github-profile.vercel.app/api/view?uid=le7cq1olyeuvjxgd17jtnno1f&amp;cover_image=true&amp;theme=default" alt="spotify-github-profile"></a>
 
-![Alt text](https://spotify-recently-played-readme.vercel.app/api?user=le7cq1olyeuvjxgd17jtnno1f)
-
 <a href="https://linkedin.com/in/lamtonylam"><img src="https://s6.gifyu.com/images/linkedin.png" alt="Nayttokuva-2021-05-05-224159.png" border="0" align="center" width="50%"/></a>
