@@ -5,6 +5,9 @@
 # Configure the English version of the site.
 [fi]
   languageCode = "fi"
+
+  [fi.params]
+  description = "Hellun OPKH:n virallinen nettisivusto! OPKH:n tehtävänä on suunnitella ja edistää opiskelijoiden yhteistoimintaa ja koulutyötä. | Helsingin luonnontiedelukion OPKH"
   # contentDir = "content/en"  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
 
 
