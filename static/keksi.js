@@ -152,6 +152,12 @@
                 _addClass(html_dom, 'force--consent');
             }
 
+
+              const isMobile = window.matchMedia("only screen and (min-width: 760px)").matches;
+                if (isMobile) {
+                    _addClass(html_dom, 'force--consent');
+                }
+
             _log("CookieConsent [LANG]: setting current_lang = '"+ _config.current_lang + "'");
         }
 

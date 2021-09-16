@@ -90,6 +90,7 @@
 </div>
 <div class="br"></div>
 
+
 <script>
     window.addEventListener('load', function(){
 
@@ -101,15 +102,7 @@
         page_scripts: true,
         remove_cookie_tables: true,
         autoclear_cookies: true,
-
-        onAccept : function(){
-            console.log("Okei!");
-        },
-
-        onChange: function(){
-            console.log("Vaihdettu!");
-        },
-            		
+        
         gui_options: {
         consent_modal : {
             layout : 'cloud',               // box/cloud/bar
@@ -126,7 +119,7 @@
             en : {
                 consent_modal : {
                     title :  "Käytämme evästeitä!",
-                    description :  'Evästeiden avulla voimme tarjota sinulle paremman käyttökokemuksen ja henkilökohtaisemman palvelun. Kun hyväksyt evästeet, voimme kehittää palveluistamme entistä parempia ja pystymme tarjoamaan sinulle kiinnostavaa sisältöä. <br><br> Evästeet ovat esimerkiksi analytiikan-, markkinoinnin-, tai toiminnallisuuden evästeet. <br><br> Valitsemalla "OK", hyväksyt kaikki evästeet. Valitsemalla "Evästeasetukset" voit tehdä tarkempia valintoja suostumuksiin tai saada lisää tietoa evästeistä sekä sivustolla käytetyistä palveluista. Voit aina halutessasi muuttaa valintojasi, kuten peruuttaa suostumuksen, valitsemalla sivun pohjalta "Muokkaa evästeasetuksia".',
+                    description :  'Evästeiden avulla voimme tarjota sinulle paremman käyttökokemuksen ja pystymme tarjoamaan kiinnostavaa sisältöä.<br><br> Evästeet ovat esimerkiksi analytiikan-, markkinoinnin-, tai toiminnallisuuden evästeet. <br><br> Valitsemalla "OK", hyväksyt kaikki evästeet. Valitsemalla "Evästeasetukset" voit tehdä tarkempia valintoja suostumuksiin tai saada lisää tietoa evästeistä sekä sivustolla käytetyistä palveluista. Voit aina halutessasi muuttaa valintojasi, kuten peruuttaa suostumuksen, valitsemalla sivun pohjalta "Muokkaa evästeasetuksia".',
                     primary_btn: {
                         text: 'OK',
                         role: 'accept_all'  //'accept_selected' or 'accept_all'
