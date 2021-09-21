@@ -42,6 +42,7 @@
   {{ with $superuser_name }}<meta name="author" content="{{ . }}" />{{ end }}
 
   {{/* Generate page description. */}}
+  {{ $desc := "" }}
   {{ if .Params.summary }}
     {{ $desc = .Params.summary }}
   {{ else if .Params.abstract }}
