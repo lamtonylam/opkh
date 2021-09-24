@@ -33,7 +33,6 @@ Kolmannen osapuolen palvelut sivustolla:
 - Clarity.ms (analytics)
 - Hubspot (lead generation)
 - Clearbit (lead generation)
-- Leadinfo (lead generation)
 
 Sivuston toiminnallisuuden kannalta tarpeelliset evästeet:
 - Cloudflare (Palvelin) (tarpeellinen)
