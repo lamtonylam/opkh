@@ -7,7 +7,7 @@ draft: false
 featured: false
 authors:
   - admin
-url: /teema
+url: /teema2021
 categories:
   - post
 image:
