@@ -1,5 +1,5 @@
 /*!
- * CookieConsent v2.5.1
+ * CookieConsent v2.6.0
  * https://www.github.com/orestbida/cookieconsent
  * Author Orest Bida
  * Released under the MIT License
@@ -25,6 +25,7 @@
             cookie_domain: location.hostname,       // default: current domain
             cookie_path: "/",
             cookie_same_site: "Lax",
+            use_rfc_cookie: false,
             autoclear_cookies: true,
             revision: 0,
             script_selector: "data-cookiecategory"
@@ -38,16 +39,19 @@
         /**
          * Internal state variables
          */
-        var _saved_cookie_content;
-        var consent_modal_exists = false;
-        var cookie_consent_accepted = false;
-        var consent_modal_visible = false;
-        var settings_modal_visible = false;
-        var clicked_inside_modal = false;
-        var current_modal_focusable;
-        var all_table_headers, all_blocks, onAccept, onChange;
-        var valid_revision=true, revision_enabled=false;
-        
+         var saved_cookie_content = {};
+         var consent_modal_exists = false;
+         var cookie_consent_accepted = false;
+         var consent_modal_visible = false;
+         var settings_modal_visible = false;
+         var clicked_inside_modal = false;
+         var current_modal_focusable;
+         var all_table_headers, all_blocks, onAccept, onChange;
+         var valid_revision=true, revision_enabled=false, data=null;
+ 
+         // Don't run plugin (to avoid indexing its text content) if bot detected 
+         var is_bot = false;
+
         /**
          * Save reference to the last focused element on the page
          * (used later to restore focus when both modals are closed)
@@ -129,12 +133,20 @@
             }
 
             if(typeof conf_params['revision'] === "number"){
-                _config.revision = conf_params['revision'];
+                conf_params['revision'] > -1 && (_config.revision = conf_params['revision']);
                 revision_enabled = true;
             }
 
             if(conf_params['autoclear_cookies'] === true){
                 _config.autoclear_cookies = true;
+            }
+            
+             if(conf_params['use_rfc_cookie'] === true){
+                _config.use_rfc_cookie = true;
+            }
+
+            if(conf_params['hide_from_bots'] === true){
+                is_bot = navigator && navigator.userAgent && /bot|crawl|spider|slurp|teoma/i.test(navigator.userAgent);
             }
 
             _config.page_scripts = conf_params['page_scripts'] === true;
@@ -258,6 +270,7 @@
             }
         }
 
+        var _conf_params, _createConsentModal, revision_message="";
 
         /**
          * Generate cookie consent html based on config settings
@@ -282,9 +295,13 @@
             // Feature detection :=> avoid IE exception since .textContent is not always supported
             var innerText = (typeof html_dom.textContent === 'string' ? 'textContent' : 'innerText');
             
-            // If never_accepted => create consent-modal
-            if(!never_accepted){
-                
+            _conf_params = conf_params;
+            _createConsentModal = function(conf_params){
+
+                if(conf_params['force_consent'] === true){
+                    _addClass(html_dom, 'force--consent');
+                }
+
                 consent_modal = _createNode('div');
                 var consent_modal_inner = _createNode('div');
                 var consent_modal_inner_inner = _createNode('div');
@@ -328,7 +345,7 @@
 
                 if(revision_enabled){
                     if(!valid_revision){
-                        description = description.replace("{{revision_message}}", conf_params.languages[lang]['consent_modal']['revision_message'] || "");
+                        description = description.replace("{{revision_message}}", revision_message || conf_params.languages[lang]['consent_modal']['revision_message'] || "");
                     }else{
                         description = description.replace("{{revision_message}}", "");
                     }
@@ -373,7 +390,12 @@
                 // Append consent modal to main container
                 all_modals_container.appendChild(consent_modal);
                 all_modals_container.appendChild(overlay);
-            }
+        
+            consent_modal_exists = true;
+        }
+
+        // Create consent modal
+        if(!never_accepted) _createConsentModal(conf_params);
 
             /**
              * Create all consent_modal elements
@@ -430,6 +452,8 @@
             });
 
             all_blocks = conf_params.languages[_config.current_lang]['settings_modal']['blocks'];
+            all_table_headers = conf_params.languages[_config.current_lang]['settings_modal']['cookie_table_headers'];
+
             var n_blocks = all_blocks.length;
 
             // Set settings modal title
@@ -497,7 +521,7 @@
                      * Otherwise, retrieve values from saved cookie
                      */
                     if(never_accepted){
-                        if(_inArray(JSON.parse(_saved_cookie_content).level, cookie_category) > -1){ 
+                        if(_inArray(saved_cookie_content['level'], cookie_category) > -1){ 
                             block_switch.checked = true;
                             toggle_states.push(true);
                         }else{
@@ -573,7 +597,6 @@
                 // if cookie table found, generate table for this block
                 if(!remove_cookie_tables && typeof all_blocks[i]['cookie_table'] !== 'undefined'){
                     var tr_tmp_fragment = document.createDocumentFragment();
-                    all_table_headers = conf_params.languages[_config.current_lang]['settings_modal']['cookie_table_headers'];
                     
                     /**
                      * Use custom table headers
@@ -830,25 +853,28 @@
                 }
             }
 
-            _saved_cookie_content = JSON.stringify({
+            saved_cookie_content = {
                 "level" : accepted_categories,
-                "revision": _config.revision
-            });
+                "revision": _config.revision,
+                "data": data,
+                "rfc_cookie": _config.use_rfc_cookie
+            }
 
             // save cookie with preferences 'level' (only if never accepted or settings were updated)
-            if(!cookie_consent_accepted || changedSettings.length > 0 || !valid_revision)
-                _setCookie(_config.cookie_name, _saved_cookie_content);
-
-            _manageExistingScripts();
+            if(!cookie_consent_accepted || changedSettings.length > 0 || !valid_revision){
+                valid_revision = true;
+                _setCookie(_config.cookie_name, JSON.stringify(saved_cookie_content));
+                _manageExistingScripts();
+            }
 
             if(typeof onAccept === "function" && !cookie_consent_accepted){
-                cookie_consent_accepted = true; 
-                return onAccept(JSON.parse(_saved_cookie_content));
+                cookie_consent_accepted = true;
+                return onAccept(saved_cookie_content);
             }
 
             // fire onChange only if settings were changed
             if(typeof onChange === "function" && changedSettings.length > 0){
-                onChange(JSON.parse(_saved_cookie_content), changedSettings);
+                onChange(saved_cookie_content, changedSettings);
             }
 
             /**
@@ -1047,660 +1073,806 @@
          * Manage each modal's layout
          * @param {Object} gui_options 
          */
-        var _guiManager = function(gui_options){
+                var _guiManager = function(gui_options, only_consent_modal){
 
-            // If gui_options is not object => exit
-            if(typeof gui_options !== 'object') return;
-
-            var consent_modal_options = gui_options['consent_modal'];
-            var settings_modal_options = gui_options['settings_modal'];
-
-            /**
-             * Helper function which adds layout and 
-             * position classes to given modal
-             * 
-             * @param {HTMLElement} modal 
-             * @param {string[]} allowed_layouts 
-             * @param {string[]} allowed_positions 
-             * @param {string} layout 
-             * @param {string[]} position
-             */
-            function _setLayout(modal, allowed_layouts, allowed_positions, allowed_transitions, layout, position, transition){
-                position = position && position.split(" ") || []; 
-
-                // Check if specified layout is valid
-                if(_inArray(allowed_layouts, layout) > -1){
-
-                    // Add layout classes
-                    _addClass(modal, layout);
-                    
-                    // Add position class (if specified)
-                    if(_inArray(allowed_positions, position[0]) > -1){
-                        for(var i=0; i<position.length; i++){
-                            _addClass(modal, position[i]);
-                        }
-                    }
-                }
-                
-                // Add transition class
-                (_inArray(allowed_transitions, transition) > -1) && _addClass(modal, transition);
-            }
-            
-            if(consent_modal_exists && consent_modal_options){
-                _setLayout(
-                    consent_modal,
-                    ['box', 'bar', 'cloud'],
-                    ['top', 'bottom'],
-                    ['zoom', 'slide'],
-                    consent_modal_options['layout'],
-                    consent_modal_options['position'],
-                    consent_modal_options['transition']
-                );
-            }
-
-            if(settings_modal_options){
-                _setLayout(
-                    settings_container,
-                    ['bar'],
-                    ['left', 'right'],
-                    ['zoom', 'slide'],
-                    settings_modal_options['layout'],
-                    settings_modal_options['position'],
-                    settings_modal_options['transition']
-                );
-            }
-        }
+                    // If gui_options is not object => exit
+                    if(typeof gui_options !== 'object') return;
         
-        /**
-         * Returns true if cookie category is accepted by the user
-         * @param {string} cookie_category 
-         * @returns {boolean}
-         */
-        _cookieconsent.allowedCategory = function(cookie_category){
-            return _inArray(
-                JSON.parse(_getCookie(_config.cookie_name, 'one', true) || '{}')['level'] || [] , 
-                cookie_category
-            ) > -1;
-        }
-
-        /**
-         * Check if cookieconsent is already attached to dom
-         * If not, create one, configure it and attach it to the body
-         */
-        _cookieconsent.run = function(conf_params){
-            if(!document.getElementById('cc_div')){
-                // configure all parameters
-                _setConfig(conf_params);
-
-                // Retrieve cookie value (if set)
-                _saved_cookie_content = _getCookie(_config.cookie_name, 'one', true);
-
-                // Compare current revision with the one retrieved from cookie
-                valid_revision = typeof conf_params['revision'] === "number" 
-                    ? _saved_cookie_content 
-                        ? (JSON.parse(_saved_cookie_content || "{}")['revision'] === _config.revision) 
-                        : true
-                    : true;
-                
-                // If invalid revision or cookie is empty => create consent modal
-                consent_modal_exists = (!valid_revision || _saved_cookie_content === '');
-
-                // Generate cookie-settings dom (& consent modal)
-                _createCookieConsentHTML(!consent_modal_exists, conf_params);
-
-                _loadCSS(conf_params['theme_css'], function(){
-                    _getModalFocusableData();
-                    _guiManager(conf_params['gui_options']);
-                    _addCookieSettingsButtonListener();
-
-                    if(_config.autorun && (!_saved_cookie_content || !valid_revision)){
-                        _cookieconsent.show(conf_params['delay'] || 0);
-                    }
-
-                    // Add class to enable animations/transitions
-                    setTimeout(function(){_addClass(main_container, 'c--anim');}, 30);
-
-                    // Accessibility :=> if tab pressed => trap focus inside modal
-                    setTimeout(function(){_handleFocusTrap();}, 100);
-                });
-
-                _saved_cookie_content && (cookie_consent_accepted = true)
-
-                // if cookie accepted => fire once the "onAccept" method (if defined)
-                if(cookie_consent_accepted){
-                    _manageExistingScripts();
-                    if(typeof conf_params['onAccept'] === "function"){
-                        conf_params['onAccept'](JSON.parse(_saved_cookie_content || "{}"));
-                    }
-                }
-            }else{
-                _log("CookieConsent [NOTICE]: cookie consent already attached to body!");
-            }
-        }
-
-        /**
-         * Show settings modal (with optional delay)
-         * @param {number} delay 
-         */
-        _cookieconsent.showSettings = function(delay){
-            setTimeout(function() {
-                _addClass(html_dom, "show--settings");
-                settings_container.setAttribute('aria-hidden', 'false');
-                settings_modal_visible = true;
-
-                /**
-                 * Set focus to the first focusable element inside settings modal
-                 */
-                setTimeout(function(){
-                    // If there is no consent-modal, keep track of the last focused elem.
-                    if(!consent_modal_visible){
-                        last_elem_before_modal = document.activeElement;
-                    }else{
-                        last_consent_modal_btn_focus = document.activeElement;
-                    }
-
-                    if (settings_modal_focusable.length === 0) return;
-
-                    if(settings_modal_focusable[3]){
-                        settings_modal_focusable[3].focus();
-                    }else{
-                        settings_modal_focusable[0].focus();
-                    }
-                    current_modal_focusable = settings_modal_focusable;
-                }, 200);
-
-                _log("CookieConsent [SETTINGS]: show settings_modal");
-            }, delay > 0 ? delay : 0);
-        }
-
-        /**
-         * This function handles the loading/activation logic of the already 
-         * existing scripts based on the current accepted cookie categories
-         */
-        var _manageExistingScripts = function(){
-
-            if(!_config.page_scripts) return;
-
-            // get all the scripts with "cookie-category" attribute
-            var scripts = document.querySelectorAll('script[' + _config.script_selector + ']');
-            var sequential_enabled = _config.page_scripts_order;
-            var accepted_categories = JSON.parse(_saved_cookie_content).level || [];
-            _log("CookieConsent [SCRIPT_MANAGER]: sequential loading:", sequential_enabled);
-
-            /**
-             * Load scripts (sequentially), using a recursive function
-             * which loops through the scripts array
-             * @param {Element[]} scripts scripts to load
-             * @param {number} index current script to load
-             */
-            var _loadScripts = function(scripts, index){
-                if(index < scripts.length){
-
-                    var curr_script = scripts[index];
-                    var curr_script_category = curr_script.getAttribute(_config.script_selector);
-                    
+                    var consent_modal_options = gui_options['consent_modal'];
+                    var settings_modal_options = gui_options['settings_modal'];
+        
                     /**
-                     * If current script's category is on the array of categories
-                     * accepted by the user => load script
+                     * Helper function which adds layout and 
+                     * position classes to given modal
+                     * 
+                     * @param {HTMLElement} modal 
+                     * @param {string[]} allowed_layouts 
+                     * @param {string[]} allowed_positions 
+                     * @param {string} layout 
+                     * @param {string[]} position
                      */
-                    if(_inArray(accepted_categories, curr_script_category) > -1){
-                        
-                        curr_script.type = 'text/javascript';
-                        curr_script.removeAttribute(_config.script_selector);
-                        
-                        // get current script data-src
-                        var src = curr_script.getAttribute('data-src');
-                        
-                        // create fresh script (with the same code)
-                        var fresh_script = _createNode('script');
-                        fresh_script.textContent = curr_script.innerHTML;
-
-                        // Copy attributes over to the new "revived" script
-                        (function(destination, source){
-                            var attr, attributes = source.attributes;
-                            var len = attributes.length;
-                            for(var i=0; i<len; i++){
-                                attr = attributes[i];
-                                destination.setAttribute(attr.nodeName, attr.nodeValue);
-                            }
-                        })(fresh_script, curr_script);
-                        
-                        // set src (if data-src found)
-                        src ? (fresh_script.src = src) : (src = curr_script.src);
-
-                        // if script has "src" attribute
-                        // try loading it sequentially
-                        if(src){
-                            if(sequential_enabled){
-                                // load script sequentially => the next script will not be loaded 
-                                // until the current's script onload event triggers
-                                if(fresh_script.readyState) {  // only required for IE <9
-                                    fresh_script.onreadystatechange = function() {
-                                        if (fresh_script.readyState === "loaded" || fresh_script.readyState === "complete" ) {
-                                            fresh_script.onreadystatechange = null;
-                                            _loadScripts(scripts, ++index);
-                                        }
-                                    };
-                                }else{  // others
-                                    fresh_script.onload = function(){
-                                        fresh_script.onload = null;
-                                        _loadScripts(scripts, ++index);
-                                    };
+                    function _setLayout(modal, allowed_layouts, allowed_positions, allowed_transitions, layout, position, transition){
+                        position = position && position.split(" ") || []; 
+        
+                        // Check if specified layout is valid
+                        if(_inArray(allowed_layouts, layout) > -1){
+        
+                            // Add layout classes
+                            _addClass(modal, layout);
+                            
+                            // Add position class (if specified)
+                            if(!(layout === 'bar' && position[0] === 'middle') && _inArray(allowed_positions, position[0]) > -1){
+                                for(var i=0; i<position.length; i++){
+                                    _addClass(modal, position[i]);
                                 }
-                            }else{
-                                // if sequential option is disabled
-                                // treat current script as inline (without onload event)
-                                src = false;
                             }
                         }
-
-                        // Replace current "sleeping" script with the new "revived" one
-                        curr_script.parentNode.replaceChild(fresh_script, curr_script);
-
-                        /**
-                         * If we managed to get here and scr is still set, it means that
-                         * the script is loading/loaded sequentially so don't go any further
-                         */
-                        if(src) return;
+                        
+                        // Add transition class
+                        (_inArray(allowed_transitions, transition) > -1) && _addClass(modal, transition);
                     }
-
-                    // Go to next script right away
-                    _loadScripts(scripts, ++index);
-                }
-            }
-
-            _loadScripts(scripts, 0);
-        }
-
-        /**
-         * Function which will run after script load
-         * @callback scriptLoaded
-        */
-
-        /**
-         * Dynamically load script (append to head)
-         * @param {string} src
-         * @param {scriptLoaded} callback
-         * @param {string[]} attrs
-         */
-        _cookieconsent.loadScript = function(src, callback, attrs){
-
-            var function_defined = typeof callback === 'function';
-
-            // Load script only if not already loaded
-            if(!document.querySelector('script[src="' + src + '"]')){
-                
-                var script = _createNode('script');
-                
-                // if an array is provided => add custom attributes
-                if(attrs && attrs.length > 0){
-                    for(var i=0; i<attrs.length; ++i){
-                        attrs[i] && script.setAttribute(attrs[i]['name'], attrs[i]['value']);
+                    
+                    if(consent_modal_exists && consent_modal_options){
+                        _setLayout(
+                            consent_modal,
+                            ['box', 'bar', 'cloud'],
+                            ['top', 'middle', 'bottom'],
+                            ['zoom', 'slide'],
+                            consent_modal_options['layout'],
+                            consent_modal_options['position'],
+                            consent_modal_options['transition']
+                        );
+                    }
+        
+                    if(!only_consent_modal && settings_modal_options){
+                        _setLayout(
+                            settings_container,
+                            ['bar'],
+                            ['left', 'right'],
+                            ['zoom', 'slide'],
+                            settings_modal_options['layout'],
+                            settings_modal_options['position'],
+                            settings_modal_options['transition']
+                        );
                     }
                 }
-                
-                // if callback function defined => run callback onload
-                if(function_defined){
-                    if(script.readyState) {  // only required for IE <9
-                        script.onreadystatechange = function() {
-                            if ( script.readyState === "loaded" || script.readyState === "complete" ) {
-                                script.onreadystatechange = null;
-                                callback();
-                            }
-                        };
-                    }else{  //Others
-                        script.onload = callback;
-                    }
-                }
-
-                script.src = src;
                 
                 /**
-                 * Append script to head
+                 * Returns true if cookie category is accepted by the user
+                 * @param {string} cookie_category 
+                 * @returns {boolean}
                  */
-                (document.head ? document.head : document.getElementsByTagName('head')[0]).appendChild(script);
-            }else{
-                function_defined && callback();
-            }
-        }
-
-        /**
-         * Show cookie consent modal (with delay parameter)
-         * @param {number} delay 
-         */
-        _cookieconsent.show = function(delay){
-            if(consent_modal_exists){
-                setTimeout(function() {
-                    _addClass(html_dom, "show--consent");
-
+                _cookieconsent.allowedCategory = function(cookie_category){
+                    return _inArray(
+                        JSON.parse(_getCookie(_config.cookie_name, 'one', true) || '{}')['level'] || [] , 
+                        cookie_category
+                    ) > -1;
+                }
+        
+                /**
+                 * Check if cookieconsent is already attached to dom
+                 * If not, create one, configure it and attach it to the body
+                 */
+                _cookieconsent.run = function(conf_params){
+                    if(!document.getElementById('cc_div')){
+                        // configure all parameters
+                        _setConfig(conf_params);
+        
+                        // if is bot, don't run plugin
+                        if(is_bot) return;
+        
+                        // Retrieve cookie value (if set)
+                        saved_cookie_content = JSON.parse(_getCookie(_config.cookie_name, 'one', true) || "{}");
+                        cookie_consent_accepted = saved_cookie_content['level'] !== undefined;
+                        data = saved_cookie_content['data'] !== undefined ? saved_cookie_content['data'] : null;
+        
+                        // Compare current revision with the one retrieved from cookie
+                        valid_revision = typeof conf_params['revision'] === "number" 
+                            ? cookie_consent_accepted 
+                                ? conf_params['revision'] > -1
+                                    ? saved_cookie_content['revision'] === _config.revision
+                                    : true
+                                : true
+                            : true;
+        
+                        // If invalid revision or cookie is empty => create consent modal
+                        consent_modal_exists = (!cookie_consent_accepted || !valid_revision);
+        
+                        // Generate cookie-settings dom (& consent modal)
+                        _createCookieConsentHTML(!consent_modal_exists, conf_params);
+        
+                        _loadCSS(conf_params['theme_css'], function(){
+                            _getModalFocusableData();
+                            _guiManager(conf_params['gui_options']);
+                            _addCookieSettingsButtonListener();
+        
+                            if(_config.autorun && consent_modal_exists){
+                                _cookieconsent.show(conf_params['delay'] || 0);
+                            }
+        
+                            // Add class to enable animations/transitions
+                            setTimeout(function(){_addClass(main_container, 'c--anim');}, 30);
+        
+                            // Accessibility :=> if tab pressed => trap focus inside modal
+                            setTimeout(function(){_handleFocusTrap();}, 100);
+                        });
+        
+                        if(cookie_consent_accepted && valid_revision){
+                            var rfc_prop_exists = typeof saved_cookie_content['rfc_cookie'] === "boolean";
+                            
+                            /*
+                             * Convert cookie to rfc format (if `use_rfc_cookie` is enabled)
+                             */
+                            if(!rfc_prop_exists || (rfc_prop_exists && saved_cookie_content['rfc_cookie'] !== _config.use_rfc_cookie)){
+                                saved_cookie_content['rfc_cookie'] = _config.use_rfc_cookie;
+                                _setCookie(_config.cookie_name, JSON.stringify(saved_cookie_content));
+                            }
+        
+                            _manageExistingScripts();
+                            if(typeof conf_params['onAccept'] === "function"){
+                                conf_params['onAccept'](saved_cookie_content);
+                            }
+                        }
+                    }else{
+                        _log("CookieConsent [NOTICE]: cookie consent already attached to body!");
+                    }
+                }
+        
+                /**
+                 * Show settings modal (with optional delay)
+                 * @param {number} delay 
+                 */
+                _cookieconsent.showSettings = function(delay){
+                    setTimeout(function() {
+                        _addClass(html_dom, "show--settings");
+                        settings_container.setAttribute('aria-hidden', 'false');
+                        settings_modal_visible = true;
+        
+                        /**
+                         * Set focus to the first focusable element inside settings modal
+                         */
+                        setTimeout(function(){
+                            // If there is no consent-modal, keep track of the last focused elem.
+                            if(!consent_modal_visible){
+                                last_elem_before_modal = document.activeElement;
+                            }else{
+                                last_consent_modal_btn_focus = document.activeElement;
+                            }
+        
+                            if (settings_modal_focusable.length === 0) return;
+        
+                            if(settings_modal_focusable[3]){
+                                settings_modal_focusable[3].focus();
+                            }else{
+                                settings_modal_focusable[0].focus();
+                            }
+                            current_modal_focusable = settings_modal_focusable;
+                        }, 200);
+        
+                        _log("CookieConsent [SETTINGS]: show settings_modal");
+                    }, delay > 0 ? delay : 0);
+                }
+        
+                /**
+                 * This function handles the loading/activation logic of the already 
+                 * existing scripts based on the current accepted cookie categories
+                 */
+                var _manageExistingScripts = function(){
+        
+                    if(!_config.page_scripts) return;
+        
+                    // get all the scripts with "cookie-category" attribute
+                    var scripts = document.querySelectorAll('script[' + _config.script_selector + ']');
+                    var sequential_enabled = _config.page_scripts_order;
+                    var accepted_categories = saved_cookie_content['level'] || [];
+                    _log("CookieConsent [SCRIPT_MANAGER]: sequential loading:", sequential_enabled);
+        
                     /**
-                     * Update attributes/internal statuses
+                     * Load scripts (sequentially), using a recursive function
+                     * which loops through the scripts array
+                     * @param {Element[]} scripts scripts to load
+                     * @param {number} index current script to load
                      */
-                    consent_modal.setAttribute('aria-hidden', 'false');
-                    consent_modal_visible = true;
-
-
+                    var _loadScripts = function(scripts, index){
+                        if(index < scripts.length){
+        
+                            var curr_script = scripts[index];
+                            var curr_script_category = curr_script.getAttribute(_config.script_selector);
+                            
+                            /**
+                             * If current script's category is on the array of categories
+                             * accepted by the user => load script
+                             */
+                            if(_inArray(accepted_categories, curr_script_category) > -1){
+                                
+                                curr_script.type = 'text/javascript';
+                                curr_script.removeAttribute(_config.script_selector);
+                                
+                                // get current script data-src
+                                var src = curr_script.getAttribute('data-src');
+                                
+                                // create fresh script (with the same code)
+                                var fresh_script = _createNode('script');
+                                fresh_script.textContent = curr_script.innerHTML;
+        
+                                // Copy attributes over to the new "revived" script
+                                (function(destination, source){
+                                    var attr, attributes = source.attributes;
+                                    var len = attributes.length;
+                                    for(var i=0; i<len; i++){
+                                        attr = attributes[i];
+                                        destination.setAttribute(attr.nodeName, attr.nodeValue);
+                                    }
+                                })(fresh_script, curr_script);
+                                
+                                // set src (if data-src found)
+                                src ? (fresh_script.src = src) : (src = curr_script.src);
+        
+                                // if script has "src" attribute
+                                // try loading it sequentially
+                                if(src){
+                                    if(sequential_enabled){
+                                        // load script sequentially => the next script will not be loaded 
+                                        // until the current's script onload event triggers
+                                        if(fresh_script.readyState) {  // only required for IE <9
+                                            fresh_script.onreadystatechange = function() {
+                                                if (fresh_script.readyState === "loaded" || fresh_script.readyState === "complete" ) {
+                                                    fresh_script.onreadystatechange = null;
+                                                    _loadScripts(scripts, ++index);
+                                                }
+                                            };
+                                        }else{  // others
+                                            fresh_script.onload = function(){
+                                                fresh_script.onload = null;
+                                                _loadScripts(scripts, ++index);
+                                            };
+                                        }
+                                    }else{
+                                        // if sequential option is disabled
+                                        // treat current script as inline (without onload event)
+                                        src = false;
+                                    }
+                                }
+        
+                                // Replace current "sleeping" script with the new "revived" one
+                                curr_script.parentNode.replaceChild(fresh_script, curr_script);
+        
+                                /**
+                                 * If we managed to get here and scr is still set, it means that
+                                 * the script is loading/loaded sequentially so don't go any further
+                                 */
+                                if(src) return;
+                            }
+        
+                            // Go to next script right away
+                            _loadScripts(scripts, ++index);
+                        }
+                    }
+        
+                    _loadScripts(scripts, 0);
+                }
+        
+                /**
+                 * Save custom data inside cookie
+                 * @param {object|string} new_data 
+                 * @param {string} [mode]
+                 * @returns {boolean}
+                 */
+                var _setCookieData = function(new_data, mode){
+        
+                    var set = false;
+                    /**
+                     * If mode is 'update':
+                     * add/update only the specified props.
+                     */
+                    if(mode === 'update'){
+                        data = _cookieconsent.get('data');
+                        var same_type = typeof data === typeof new_data;
+        
+                        if(same_type && typeof data === "object"){
+                            !data && (data = {});
+        
+                            for(var prop in new_data){
+                                if(data[prop] !== new_data[prop]){
+                                    data[prop] = new_data[prop]
+                                    set = true;
+                                }
+                            }     
+                        }else if((same_type || !data) && data !== new_data){
+                            data = new_data;
+                            set = true;
+                        }
+                    }else{
+                        data = new_data;
+                        set = true;
+                    }
+                        
+                    set && (
+                        saved_cookie_content['data'] = data,
+                        _setCookie(_config.cookie_name, JSON.stringify(saved_cookie_content))
+                    )
+        
+                    return set;
+                }
+        
+                /**
+                 * Forcefully set a specific revision and show consent modal
+                 * @param {number} new_revision
+                 * @param {boolean} [prompt_consent]
+                 * @returns {boolean}
+                 */
+                var _setRevision = function(new_revision, prompt_consent, message){
+        
+                    // If plugin has been initialized and new revision is valid
+                    if(
+                        main_container
+                        && cookie_consent_accepted
+                        && typeof new_revision === "number" 
+                        && saved_cookie_content['revision'] !== new_revision
+                    ){
+        
+                        revision_enabled = true;
+                        revision_message = message;
+                        valid_revision = false;
+                        _config.revision = new_revision;
+        
+                        // Show consent modal ?
+                        if(prompt_consent === true){
+                            if(!consent_modal_exists){
+                                _createConsentModal(_conf_params);
+                                _guiManager(_conf_params['gui_options'], true);
+                            }
+                                
+                            _cookieconsent.show();
+                        }else {
+                            // If revision was modified, save cookie with the new revision
+                            _cookieconsent.accept();
+                        }
+        
+                        return true;
+                    }
+                    
+                    return false;
+                }
+        
+                /**
+                 * Helper method to set a variety of fields
+                 * @param {string} field 
+                 * @param {object} data 
+                 * @returns {boolean}
+                 */
+                _cookieconsent.set = function(field, data){
+                    switch(field){
+                        case 'data': return _setCookieData(data['value'], data['mode']);
+                        case 'revision': return _setRevision(data['value'], data['prompt_consent'], data['message']);
+                    }
+                }
+        
+                /**
+                 * Retrieve data from existing cookie
+                 * @returns {any}
+                 */
+                _cookieconsent.get = function(field){
+                    var cookie = JSON.parse(_getCookie(_config.cookie_name, 'one', true) || "{}");
+        
+                    return cookie[field];
+                }
+        
+                /**
+                 * Function which will run after script load
+                 * @callback scriptLoaded
+                */
+        
+                /**
+                 * Dynamically load script (append to head)
+                 * @param {string} src
+                 * @param {scriptLoaded} callback
+                 * @param {string[]} attrs
+                 */
+                _cookieconsent.loadScript = function(src, callback, attrs){
+        
+                    var function_defined = typeof callback === 'function';
+        
+                    // Load script only if not already loaded
+                    if(!document.querySelector('script[src="' + src + '"]')){
+                        
+                        var script = _createNode('script');
+                        
+                        // if an array is provided => add custom attributes
+                        if(attrs && attrs.length > 0){
+                            for(var i=0; i<attrs.length; ++i){
+                                attrs[i] && script.setAttribute(attrs[i]['name'], attrs[i]['value']);
+                            }
+                        }
+                        
+                        // if callback function defined => run callback onload
+                        if(function_defined){
+                            if(script.readyState) {  // only required for IE <9
+                                script.onreadystatechange = function() {
+                                    if ( script.readyState === "loaded" || script.readyState === "complete" ) {
+                                        script.onreadystatechange = null;
+                                        callback();
+                                    }
+                                };
+                            }else{  //Others
+                                script.onload = callback;
+                            }
+                        }
+        
+                        script.src = src;
+                        
+                        /**
+                         * Append script to head
+                         */
+                        (document.head ? document.head : document.getElementsByTagName('head')[0]).appendChild(script);
+                    }else{
+                        function_defined && callback();
+                    }
+                }
+        
+                /**
+                 * Show cookie consent modal (with delay parameter)
+                 * @param {number} delay 
+                 */
+                _cookieconsent.show = function(delay){
+                    if(consent_modal_exists){
+                        setTimeout(function() {
+                            _addClass(html_dom, "show--consent");
+        
+                            /**
+                             * Update attributes/internal statuses
+                             */
+                            consent_modal.setAttribute('aria-hidden', 'false');
+                            consent_modal_visible = true;
+        
+                            setTimeout(function(){
+                                last_elem_before_modal = document.activeElement;
+                                current_modal_focusable = consent_modal_focusable;
+                            }, 200);
+                            
+                            _log("CookieConsent [MODAL]: show consent_modal");
+                        }, delay > 0 ? delay : 0);
+                    }
+                }
+        
+                /**
+                 * Hide consent modal
+                 */
+                _cookieconsent.hide = function(){ 
+                    if(consent_modal_exists){
+                        _removeClass(html_dom, "show--consent");
+                        consent_modal.setAttribute('aria-hidden', 'true');
+                        consent_modal_visible = false;
+        
+                        setTimeout(function(){
+                            //restore focus to the last page element which had focus before modal opening
+                            last_elem_before_modal.focus();
+                            current_modal_focusable = null;
+                        }, 200);
+        
+                        _log("CookieConsent [MODAL]: hide");
+                    }
+                }
+        
+                /**
+                 * Hide settings modal
+                 */
+                _cookieconsent.hideSettings = function(){
+                    _removeClass(html_dom, "show--settings");
+                    settings_modal_visible = false;
+                    settings_container.setAttribute('aria-hidden', 'true');
+                    
+        
                     setTimeout(function(){
-                        last_elem_before_modal = document.activeElement;
-                        current_modal_focusable = consent_modal_focusable;
+                        /**
+                         * If consent modal is visible, focus him (instead of page document)
+                         */
+                        if(consent_modal_visible){
+                            last_consent_modal_btn_focus && last_consent_modal_btn_focus.focus();
+                            current_modal_focusable = consent_modal_focusable;
+                        }else{
+                            /**
+                             * Restore focus to last page element which had focus before modal opening
+                             */
+                            last_elem_before_modal.focus();
+                            current_modal_focusable = null;
+                        }
+        
+                        clicked_inside_modal = false;
                     }, 200);
                     
-                    _log("CookieConsent [MODAL]: show consent_modal");
-                }, delay > 0 ? delay : 0);
-            }
-        }
-
-        /**
-         * Hide consent modal
-         */
-        _cookieconsent.hide = function(){ 
-            if(consent_modal_exists){
-                _removeClass(html_dom, "show--consent");
-                consent_modal.setAttribute('aria-hidden', 'true');
-                consent_modal_visible = false;
-
-                setTimeout(function(){
-                    //restore focus to the last page element which had focus before modal opening
-                    last_elem_before_modal.focus();
-                    current_modal_focusable = null;
-                }, 200);
-
-                _log("CookieConsent [MODAL]: hide");
-            }
-        }
-
-        /**
-         * Hide settings modal
-         */
-        _cookieconsent.hideSettings = function(){
-            _removeClass(html_dom, "show--settings");
-            settings_modal_visible = false;
-            settings_container.setAttribute('aria-hidden', 'true');
-            
-
-            setTimeout(function(){
-                /**
-                 * If consent modal is visible, focus him (instead of page document)
-                 */
-                if(consent_modal_visible){
-                    last_consent_modal_btn_focus && last_consent_modal_btn_focus.focus();
-                    current_modal_focusable = consent_modal_focusable;
-                }else{
-                    /**
-                     * Restore focus to last page element which had focus before modal opening
-                     */
-                    last_elem_before_modal.focus();
-                    current_modal_focusable = null;
+                    _log("CookieConsent [SETTINGS]: hide settings_modal");
                 }
-
-                clicked_inside_modal = false;
-            }, 200);
-            
-            _log("CookieConsent [SETTINGS]: hide settings_modal");
-        }
-
-        /**
-         * Accept cookieconsent function API
-         * @param {string[]|string} _categories - Categories to accept
-         * @param {string[]} [_exclusions] - Excluded categories [optional]
-         */
-        _cookieconsent.accept = function(_categories, _exclusions){
-            var categories = _categories || undefined;
-            var exclusions = _exclusions || [];
-            var to_accept = [];
-
-            /**
-             * Get all accepted categories
-             * @returns {string[]}
-             */
-            var _getCurrentPreferences = function(){
-                var toggles = document.querySelectorAll('.c-tgl') || [];
-                var states = [];
-
-                for(var i=0; i<toggles.length; i++){
-                    if(toggles[i].checked){
-                        states.push(toggles[i].value);
-                    }
-                }
-                return states;
-            }
-
-            if(!categories){
-                to_accept = _getCurrentPreferences();
-            }else{
-                if(
-                    typeof categories === "object" && 
-                    typeof categories.length === "number"
-                ){
-                    for(var i=0; i<categories.length; i++){
-                        if(_inArray(toggle_categories, categories[i]) !== -1)
-                            to_accept.push(categories[i]);
-                    }
-                }else if(typeof categories === "string"){
-                    if(categories === 'all')
-                        to_accept = toggle_categories.slice();
-                    else{
-                        if(_inArray(toggle_categories, categories) !== -1)
-                            to_accept.push(categories);
-                    }
-                }
-            }
-
-            // Remove excluded categories
-            if(exclusions.length >= 1){
-                for(var i=0; i<exclusions.length; i++){
-                    to_accept = to_accept.filter(function(item) {
-                        return item !== exclusions[i]
-                    })
-                }
-            }
-
-            // Add back all the categories set as "readonly/required"
-            for(var i=0;i<toggle_categories.length; i++){
-                if(
-                    toggle_readonly[i] === true && 
-                    _inArray(to_accept, toggle_categories[i]) === -1
-                ){
-                    to_accept.push(toggle_categories[i]);
-                }
-            }
-            
-            _saveCookiePreferences(to_accept);
-        }
-
-        /**
-         * API function to easily erase cookies
-         * @param {(string|string[])} _cookies 
-         * @param {string} [_path] - optional 
-         * @param {string} [_domain] - optional
-         */
-        _cookieconsent.eraseCookies = function(_cookies, _path, _domain){
-            var cookies = [];
-            var domains = _domain
-                ? [_domain, "."+_domain]
-                : [_config.cookie_domain, "."+_config.cookie_domain];
-
-            if(typeof _cookies === "object" && _cookies.length > 0){
-                for(var i=0; i<_cookies.length; i++){
-                    this.validCookie(_cookies[i]) && cookies.push(_cookies[i]);
-                }
-            }else{
-                this.validCookie(_cookies) && cookies.push(_cookies);
-            }
-            
-            _eraseCookies(cookies, _path, domains);
-        }
-
-        /**
-         * Set cookie, by specifying name and value
-         * @param {string} name 
-         * @param {string} value 
-         */
-        var _setCookie = function(name, value) {
-
-            var date = new Date();
-            date.setTime(date.getTime() + (1000 * ( _config.cookie_expiration * 24 * 60 * 60)));
-            var expires = "; expires=" + date.toUTCString();
-
-            var cookieStr = name + "=" + (value || "") + expires + "; Path=" + _config.cookie_path + ";";
-            cookieStr += " SameSite=" + _config.cookie_same_site + ";";
-
-            // assures cookie works with localhost (=> don't specify domain if on localhost)
-            if(location.hostname.indexOf(".") > -1){
-                cookieStr += " Domain=" + _config.cookie_domain + ";";
-            }
-
-            if(location.protocol === "https:") {
-                cookieStr += " Secure;";
-            }
-
-            document.cookie = cookieStr;
-
-            _log("CookieConsent [SET_COOKIE]: cookie "+ name + "='" + value + "' was set!");
-        }
-
-        /**
-         * Get cookie value by name,
-         * returns the cookie value if found (or an array
-         * of cookies if filter provided), otherwise empty string: ""
-         * @param {string} name 
-         * @param {string} filter - 'one' or 'all'
-         * @param {boolean} get_value - set to true to obtain its value
-         * @returns {string|string[]}
-         */
-        var _getCookie = function(name, filter, get_value) {
-            var found;
-
-            if(filter === 'one'){
-                found = (found = document.cookie.match("(^|;)\\s*" + name + "\\s*=\\s*([^;]+)")) ? (get_value ? found.pop() : name) : ""
-            }else if(filter === 'all'){
-                // array of names of all existing cookies
-                var cookies = document.cookie.split(/;\s*/); found = [];
-                for(var i=0; i<cookies.length; i++){
-                    found.push(cookies[i].split("=")[0]);
-                }
-            }
-
-            return found;
-        }
-
-        /**
-         * Delete cookie by name & path
-         * @param {string[]} cookies 
-         * @param {string} [custom_path] - optional
-         * @param {string[]} domains - example: ['domain.com', '.domain.com']
-         */
-        var _eraseCookies = function(cookies, custom_path, domains) {
-            var path = custom_path ? custom_path : '/';
-            var expires = 'Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-
-            for(var i=0; i<cookies.length; i++){
-                for(var j=0; j<domains.length; j++){
-                    document.cookie = cookies[i] + '=; path=' + path + 
-                    (domains[j].indexOf('.') > -1 ? '; domain=' + domains[j] : "") + '; ' + expires;
-                }
-                _log("CookieConsent [AUTOCLEAR]: deleting cookie: '" + cookies[i] + "' path: '" + path + "' domain:", domains);
-            }
-        }
-
-        /**
-         * Returns true if cookie was found and has valid value (not empty string)
-         * @param {string} cookie_name
-         * @returns {boolean} 
-         */
-        _cookieconsent.validCookie = function(cookie_name){
-            return _getCookie(cookie_name, 'one', true) != "";
-        }
-
-        /**
-         * Function to run when event is fired
-         * @callback eventFired
-         */
-
-        /**
-         * Add event listener to dom object (cross browser function)
-         * @param {Element} elem 
-         * @param {string} event
-         * @param {eventFired} fn
-         * @param {boolean} passive
-         */
-        var _addEvent = function(elem, event, fn, passive) {
-            var passive = passive || false;
-            
-            if (elem.addEventListener) {
-                passive ? elem.addEventListener(event, fn , { passive: true }) : elem.addEventListener(event, fn, false);
-            } else {
-                /**
-                 * For old browser, add 'on' before event:
-                 * 'click':=> 'onclick'
-                 */
-                elem.attachEvent("on" + event, fn);
-            }
-        }
-
-        /**
-         * Get all prop. keys defined inside object
-         * @param {Object} obj 
-         */
-        var _getKeys = function(obj){
-            if(typeof obj === "object"){
-                var keys = [], i = 0;
-                for (keys[i++] in obj) {};
-                return keys;
-            }
-        }
-
-        /**
-         * Append class to the specified dom element
-         * @param {HTMLElement} elem 
-         * @param {string} classname 
-         */
-        var _addClass = function (elem, classname){
-            if(elem.classList)
-                elem.classList.add(classname)
-            else{
-                if(!_hasClass(elem, classname))
-                    elem.className += ' '+classname;
-            }
-        }
-
-        /**
-         * Remove specified class from dom element
-         * @param {HTMLElement} elem 
-         * @param {string} classname 
-         */
-        var _removeClass = function (el, className) {
-            el.classList ? el.classList.remove(className) : el.className = el.className.replace(new RegExp('(\\s|^)' + className + '(\\s|$)'), ' ');
-        }
-
-        /**
-         * Check if html element has class
-         * @param {HTMLElement} el 
-         * @param {string} className 
-         */
-        var _hasClass = function(el, className) {
-            if (el.classList) {
-                return el.classList.contains(className);
-            }
-            return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
-        }
         
-        /**
-         * Before returning the cookieconsent object,
-         * remove the initCookieConsent function from global scope
-         * to prevent users from directly manipulating the 
-         * cookieconsent options from browser console (or at least make it harder)
-         */
-        CookieConsent = window[init] = undefined;
-
-        return _cookieconsent;
-    };
-
-    var init = 'initCookieConsent';
-    /**
-     * Make CookieConsent object accessible globally
-     */
-    if(typeof window[init] !== 'function'){
-        window[init] = CookieConsent
-    }
-})();
+                /**
+                 * Accept cookieconsent function API
+                 * @param {string[]|string} _categories - Categories to accept
+                 * @param {string[]} [_exclusions] - Excluded categories [optional]
+                 */
+                _cookieconsent.accept = function(_categories, _exclusions){
+                    var categories = _categories || undefined;
+                    var exclusions = _exclusions || [];
+                    var to_accept = [];
+        
+                    /**
+                     * Get all accepted categories
+                     * @returns {string[]}
+                     */
+                    var _getCurrentPreferences = function(){
+                        var toggles = document.querySelectorAll('.c-tgl') || [];
+                        var states = [];
+        
+                        for(var i=0; i<toggles.length; i++){
+                            if(toggles[i].checked){
+                                states.push(toggles[i].value);
+                            }
+                        }
+                        return states;
+                    }
+        
+                    if(!categories){
+                        to_accept = _getCurrentPreferences();
+                    }else{
+                        if(
+                            typeof categories === "object" && 
+                            typeof categories.length === "number"
+                        ){
+                            for(var i=0; i<categories.length; i++){
+                                if(_inArray(toggle_categories, categories[i]) !== -1)
+                                    to_accept.push(categories[i]);
+                            }
+                        }else if(typeof categories === "string"){
+                            if(categories === 'all')
+                                to_accept = toggle_categories.slice();
+                            else{
+                                if(_inArray(toggle_categories, categories) !== -1)
+                                    to_accept.push(categories);
+                            }
+                        }
+                    }
+        
+                    // Remove excluded categories
+                    if(exclusions.length >= 1){
+                        for(var i=0; i<exclusions.length; i++){
+                            to_accept = to_accept.filter(function(item) {
+                                return item !== exclusions[i]
+                            })
+                        }
+                    }
+        
+                    // Add back all the categories set as "readonly/required"
+                    for(var i=0;i<toggle_categories.length; i++){
+                        if(
+                            toggle_readonly[i] === true && 
+                            _inArray(to_accept, toggle_categories[i]) === -1
+                        ){
+                            to_accept.push(toggle_categories[i]);
+                        }
+                    }
+                    
+                    _saveCookiePreferences(to_accept);
+                }
+        
+                /**
+                 * API function to easily erase cookies
+                 * @param {(string|string[])} _cookies 
+                 * @param {string} [_path] - optional 
+                 * @param {string} [_domain] - optional
+                 */
+                _cookieconsent.eraseCookies = function(_cookies, _path, _domain){
+                    var cookies = [];
+                    var domains = _domain
+                        ? [_domain, "."+_domain]
+                        : [_config.cookie_domain, "."+_config.cookie_domain];
+        
+                    if(typeof _cookies === "object" && _cookies.length > 0){
+                        for(var i=0; i<_cookies.length; i++){
+                            this.validCookie(_cookies[i]) && cookies.push(_cookies[i]);
+                        }
+                    }else{
+                        this.validCookie(_cookies) && cookies.push(_cookies);
+                    }
+                    
+                    _eraseCookies(cookies, _path, domains);
+                }
+        
+                /**
+                 * Set cookie, by specifying name and value
+                 * @param {string} name 
+                 * @param {string} value 
+                 */
+                var _setCookie = function(name, value) {
+        
+                    var value = _config.use_rfc_cookie ? b64EncodeUnicode(value) : value;
+        
+                    var date = new Date();
+                    date.setTime(date.getTime() + (1000 * ( _config.cookie_expiration * 24 * 60 * 60)));
+                    var expires = "; expires=" + date.toUTCString();
+        
+                    var cookieStr = name + "=" + (value || "") + expires + "; Path=" + _config.cookie_path + ";";
+                    cookieStr += " SameSite=" + _config.cookie_same_site + ";";
+        
+                    // assures cookie works with localhost (=> don't specify domain if on localhost)
+                    if(location.hostname.indexOf(".") > -1){
+                        cookieStr += " Domain=" + _config.cookie_domain + ";";
+                    }
+        
+                    if(location.protocol === "https:") {
+                        cookieStr += " Secure;";
+                    }
+        
+                    document.cookie = cookieStr;
+        
+                    _log("CookieConsent [SET_COOKIE]: cookie "+ name + "='" + value + "' was set!");
+                }
+        
+                /**
+                 * Get cookie value by name,
+                 * returns the cookie value if found (or an array
+                 * of cookies if filter provided), otherwise empty string: ""
+                 * @param {string} name 
+                 * @param {string} filter - 'one' or 'all'
+                 * @param {boolean} get_value - set to true to obtain its value
+                 * @returns {string|string[]}
+                 */
+                var _getCookie = function(name, filter, get_value) {
+                    var found;
+        
+                    if(filter === 'one'){
+                        found = (found = document.cookie.match("(^|;)\\s*" + name + "\\s*=\\s*([^;]+)")) ? (get_value ? found.pop() : name) : "";
+        
+                        if(found && name === _config.cookie_name){
+                            try{ 
+                                found = JSON.parse(found)
+                            }catch(e){ 
+                                found = JSON.parse(b64DecodeUnicode(found))
+                            }
+                            found = JSON.stringify(found);
+                        }
+                    }else if(filter === 'all'){
+                        // array of names of all existing cookies
+                        var cookies = document.cookie.split(/;\s*/); found = [];
+                        for(var i=0; i<cookies.length; i++){
+                            found.push(cookies[i].split("=")[0]);
+                        }
+                    }
+        
+                    return found;
+                }
+        
+                /**
+                 * Delete cookie by name & path
+                 * @param {string[]} cookies 
+                 * @param {string} [custom_path] - optional
+                 * @param {string[]} domains - example: ['domain.com', '.domain.com']
+                 */
+                var _eraseCookies = function(cookies, custom_path, domains) {
+                    var path = custom_path ? custom_path : '/';
+                    var expires = 'Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        
+                    for(var i=0; i<cookies.length; i++){
+                        for(var j=0; j<domains.length; j++){
+                            document.cookie = cookies[i] + '=; path=' + path + 
+                            (domains[j].indexOf('.') > -1 ? '; domain=' + domains[j] : "") + '; ' + expires;
+                        }
+                        _log("CookieConsent [AUTOCLEAR]: deleting cookie: '" + cookies[i] + "' path: '" + path + "' domain:", domains);
+                    }
+                }
+        
+                /**
+                 * Returns true if cookie was found and has valid value (not empty string)
+                 * @param {string} cookie_name
+                 * @returns {boolean} 
+                 */
+                _cookieconsent.validCookie = function(cookie_name){
+                    return _getCookie(cookie_name, 'one', true) != "";
+                }
+        
+                /**
+                 * Function to run when event is fired
+                 * @callback eventFired
+                 */
+        
+                /**
+                 * Add event listener to dom object (cross browser function)
+                 * @param {Element} elem 
+                 * @param {string} event
+                 * @param {eventFired} fn
+                 * @param {boolean} passive
+                 */
+                var _addEvent = function(elem, event, fn, passive) {
+                    var passive = passive || false;
+                    
+                    if (elem.addEventListener) {
+                        passive ? elem.addEventListener(event, fn , { passive: true }) : elem.addEventListener(event, fn, false);
+                    } else {
+                        /**
+                         * For old browser, add 'on' before event:
+                         * 'click':=> 'onclick'
+                         */
+                        elem.attachEvent("on" + event, fn);
+                    }
+                }
+        
+                /**
+                 * Get all prop. keys defined inside object
+                 * @param {Object} obj 
+                 */
+                var _getKeys = function(obj){
+                    if(typeof obj === "object"){
+                        var keys = [], i = 0;
+                        for (keys[i++] in obj) {};
+                        return keys;
+                    }
+                }
+        
+                /**
+                 * Encoding UTF8 -> base64
+                 * https://stackoverflow.com/questions/30106476/using-javascripts-atob-to-decode-base64-doesnt-properly-decode-utf-8-strings
+                 * @param {string} str 
+                 * @returns {string}
+                 */
+                function b64EncodeUnicode(str) {
+                    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) {
+                        return String.fromCharCode(parseInt(p1, 16))
+                    }))
+                }
+        
+                /**
+                 * Decoding base64 -> UTF8
+                 * https://stackoverflow.com/questions/30106476/using-javascripts-atob-to-decode-base64-doesnt-properly-decode-utf-8-strings
+                 * @param {string} str 
+                 * @returns {string}
+                 */
+                function b64DecodeUnicode(str) {
+                    return decodeURIComponent(Array.prototype.map.call(atob(str), function(c) {
+                        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)
+                    }).join(''))
+                }
+        
+                /**
+                 * Append class to the specified dom element
+                 * @param {HTMLElement} elem 
+                 * @param {string} classname 
+                 */
+                var _addClass = function (elem, classname){
+                    if(elem.classList)
+                        elem.classList.add(classname)
+                    else{
+                        if(!_hasClass(elem, classname))
+                            elem.className += ' '+classname;
+                    }
+                }
+        
+                /**
+                 * Remove specified class from dom element
+                 * @param {HTMLElement} elem 
+                 * @param {string} classname 
+                 */
+                var _removeClass = function (el, className) {
+                    el.classList ? el.classList.remove(className) : el.className = el.className.replace(new RegExp('(\\s|^)' + className + '(\\s|$)'), ' ');
+                }
+        
+                /**
+                 * Check if html element has class
+                 * @param {HTMLElement} el 
+                 * @param {string} className 
+                 */
+                var _hasClass = function(el, className) {
+                    if (el.classList) {
+                        return el.classList.contains(className);
+                    }
+                    return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
+                }
+        
+                return _cookieconsent;
+            };
+        
+            var init = 'initCookieConsent';
+            /**
+             * Make CookieConsent object accessible globally
+             */
+            if(typeof window[init] !== 'function'){
+                window[init] = CookieConsent
+            }
+        })();
