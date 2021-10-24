@@ -32,7 +32,7 @@
 
     {{ if site.Menus.main }}
     <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="{{ i18n "toggle_navigation" }}">
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="{{ i18n "toggle_navigation" }}">
       <span><i class="fas fa-bars"></i></span> <b>&nbsp;Menu</b>
       </button>
     {{ end }}
@@ -41,7 +41,9 @@
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
       <a class="navbar-brand" href="{{ "/" | relLangURL }}">
       {{- if $has_logo -}}
-        <img src="{{ $logo.RelPermalink }}" alt="{{ site.Title }}">
+        <img src="{{ $logo.RelPermalink }}" alt="{{ site.Title }}"
+        {{with site.Params.header.image.width}}width="{{.}}"{{end}}
+        {{with site.Params.header.image.height}}height="{{.}}"{{end}}>
         {{- else -}}
         Hellun OPKH
         {{- end -}}

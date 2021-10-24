@@ -13,14 +13,14 @@ headless: true
 weight: 70
 
 title: Ruokalista 
-subtitle: 
+subtitle:
 design:
   spacing:
     padding: ["20px", "0", "20px", "0"]
 ---
-
 <center>
 
+[https://ruokalistat.azurewebsites.net/](https://ruokalistat.azurewebsites.net/#/8cfdbfde-ea98-e511-9417-00215a9c1ca7)
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
 <script type="text/javascript">
@@ -32,7 +32,7 @@ $(function(){
     });   
 });
 </script>
-  <button id="button" type="button" class="btn btn-primary btn-lg">Paina tästä</button>
+<button id="button" type="button" class="btn btn-primary btn-lg">Paina tästä</button>
 
   <div id="iframeHolder"></div>
 
