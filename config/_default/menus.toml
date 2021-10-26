@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Uutiset"
-  url = "/#posts"
+  url = "/post"
   weight = 20
 
 [[main]]
@@ -24,9 +24,9 @@
   weight = 32
 
 [[main]]
-  name = "Tapahtumat"
-  url ="/event"
-  weight = 40
+  name = "Meemit"
+  url = "/meemit"
+  weight = 45
 
 [[main]]
   name = "Meistä"
