@@ -28,3 +28,7 @@
 [[redirects]]
   from = "/tony"
   to = "/authors/tony/"
+
+[[redirects]]
+  from = "/kirjat"
+  to = "/Oppimateriaalit_2021_-_2022.pdf"
