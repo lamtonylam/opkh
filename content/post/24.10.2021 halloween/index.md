@@ -2,7 +2,7 @@
 title: Helluween
 subtitle: Tervetuloa viettämään hyytäviä Halloweenhupeja Helluun! OPKH on juhlan hengessä mukana ja järjestää pitkin ensi viikkoa mukavaa - siis kauhistuttavaa ohjelmaa.🎃👻
 date: 2021-10-24T13:10:08+00:00
-show_date: false
+show_date: true
 summary: Tervetuloa viettämään hyytäviä Halloweenhupeja Helluun! OPKH on juhlan hengessä mukana ja järjestää pitkin ensi viikkoa mukavaa - siis kauhistuttavaa ohjelmaa.🎃👻
 draft: false
 featured: false
