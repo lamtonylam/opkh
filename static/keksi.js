@@ -365,6 +365,7 @@
                 _addEvent(consent_primary_btn, "click", function(){
                     _cookieconsent.hide();
                     _log("CookieConsent [ACCEPT]: cookie_consent was accepted!");
+                    sa_event("CookieConsent [ACCEPT]: cookie_consent was accepted!");
                     _cookieconsent.accept(accept_type);
                 });
 
@@ -372,6 +373,7 @@
                     _addEvent(consent_secondary_btn, 'click', function(){
                         _cookieconsent.hide();
                         _cookieconsent.accept([]); // accept necessary only
+                        sa_event("accept necessary only!");
                     });
                 }else{
                     _addEvent(consent_secondary_btn, 'click', function(){
