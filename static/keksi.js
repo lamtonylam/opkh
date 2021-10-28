@@ -365,9 +365,6 @@
                 _addEvent(consent_primary_btn, "click", function(){
                     _cookieconsent.hide();
                     _log("CookieConsent [ACCEPT]: cookie_consent was accepted!");
-                    panelbear("track", "accept cookie");
-                    console.log("Panelbear log event: accepted cookies!");
-                    _log("Panelbear log event: accepted cookies!");
                     _cookieconsent.accept(accept_type);
                 });
 
@@ -375,9 +372,6 @@
                     _addEvent(consent_secondary_btn, 'click', function(){
                         _cookieconsent.hide();
                         _cookieconsent.accept([]); // accept necessary only
-                        panelbear("track", "necessary only");
-                        console.log("Panelbear log event: necessary only!");
-                        _log("Panelbear log event: necessary only!");
                     });
                 }else{
                     _addEvent(consent_secondary_btn, 'click', function(){
