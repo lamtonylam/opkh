@@ -14,18 +14,20 @@ categories: ["kirja"]
 authors: ["admin"]
 url: "/eka-kokous"
 ---
+{{< toc >}}
+
 Helsingin Luonnontiedelukion opiskelijakunnan hallituksen kokous 22.1.2021
 Pöytäkirja
 
 Läsnäolijat: Dan Helenius, Väiski Salminen, Helmi Töyri, Roope Jaskari, Aleksi Liukkonen, Julia Lehtelä, Emil Jacobsson, Emilia Tyyskä, Aava Arponen, Emmi Kyrö, Marcel Mohanadas, Tony Lam, Mervi Karttunen, Terhi Hakkarainen
 
-1. Kokouksen avaus - kokous avattiin ajassa 15.05
-2. Kokouksen laillisuus ja päätösvaltaisuus - kokous todettiin lailliseksi ja
+### 1. Kokouksen avaus - kokous avattiin ajassa 15.05
+### 2. Kokouksen laillisuus ja päätösvaltaisuus - kokous todettiin lailliseksi ja
 päätösvaltaiseksi
-3. Kokouksen järjestäytyminen - kokouksen puheenjohtajana toimi Dan Helenius  ja sihteerinä Helmi Töyri
+### 3. Kokouksen järjestäytyminen - kokouksen puheenjohtajana toimi Dan Helenius  ja sihteerinä Helmi Töyri
 	1. Myönnetään puhe -ja läsnäolo-oikeudet Terhi Hakkaraiselle ja Mervi Karttuselle
-4. Todetaan hallituksen taloudellinen tilanne: Tilillä saldoa 3480,05 €
-5. Käsiteltävät asiat
+### 4. Todetaan hallituksen taloudellinen tilanne: Tilillä saldoa 3480,05 €
+### 5. Käsiteltävät asiat
 
 	1. Neliperioidjärjestelmä ja kokous rehtorien kanssa
 		Opkh oli koonnut opiskelijoiden kysymyksistä listan rehtoreille. Rehtorit pitivät kysymyksistä ja infotilaisuudessa annettiin tulevasta uudistuksesta tiivistelmä.
@@ -72,8 +74,8 @@ päätösvaltaiseksi
 	14. OPKH:n periaatteet
 		Periaatteet käytiin läpi.
 
-6. Muut esille tulevat asiat eli META
+### 6. Muut esille tulevat asiat eli META
 	6.1. Kartanon salaattikastiketta haluttaisiin ruokalaan.
 	6.2. Kauramaito pitäisi saada esille koulun kahvilassa.
-7. Seuraavan kokouksen ajan päättäminen: Päätetään WhatsApp:ssa.
-8. Kokouksen päättäminen - kokous päätettiin ajassa 16.58.42
+### 7. Seuraavan kokouksen ajan päättäminen: Päätetään WhatsApp:ssa.
+### 8. Kokouksen päättäminen - kokous päätettiin ajassa 16.58.42

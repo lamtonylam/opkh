@@ -1,8 +1,8 @@
 ---
-title: 8.10.2021 / 5. kokous
+title: 5. kokous 8.10.2021
 subtitle: 
 date: 2021-10-08
-summary: "8.10.2021 / 5. kokous"
+summary: "5. kokous 8.10.2021"
 draft: false
 featured: false
 image:
@@ -14,8 +14,9 @@ categories: ["kirja"]
 authors: ["admin"]
 url: "/viides-kokous"
 ---
+{{< toc >}}
 
-**Helsingin Luonnontiedelukion opiskelijakunnan hallituksen kokous 8.10.2021**
+Helsingin Luonnontiedelukion opiskelijakunnan hallituksen kokous 8.10.2021
 
 **Pöytäkirja**
 
@@ -23,19 +24,19 @@ Läsnäolijat: Dan Helenius, Helmi Töyri, Väiski Salminen, Julia Lehtelä, Ton
 
  
 
-**1. Kokouksen avaus** - kokous avattiin ajassa 14.40
+### **1. Kokouksen avaus** - kokous avattiin ajassa 14.40
 
-**2. Kokouksen laillisuus ja päätösvaltaisuu**s - kokous todettiin lailliseksi ja
+### **2. Kokouksen laillisuus ja päätösvaltaisuu**s - kokous todettiin lailliseksi ja
 
 päätösvaltaiseksi
 
-**3. Kokouksen järjestäytyminen** - kokouksen puheenjohtajana toimi Dan Helenius ja sihteerinä Helmi Töyri
+### **3. Kokouksen järjestäytyminen** - kokouksen puheenjohtajana toimi Dan Helenius ja sihteerinä Helmi Töyri
 
 3.1. Myönnetään puhe -ja läsnäolo-oikeudet Mervi Karttuselle ja Sonja Nurmi-Tuomiselle
 
-**4. Todetaan hallituksen taloudellinen tilanne: 3130,17 €**
+### **4. Todetaan hallituksen taloudellinen tilanne: 3130,17 €**
 
-**5. Käsiteltävät asiat**
+### **5. Käsiteltävät asiat**
 
 - Ruutirahat ja niiden käyttö
   - Ruutirahoja päätetään käyttää tapahtuman järjestämiseen. Käydään kysymässä rehtorilta mielipidettä ideoihin.
@@ -44,11 +45,11 @@ päätösvaltaiseksi
 - Muu ohjelma
   - Liikennevalopäivä on syysloman jälkeisellä viikolla ti 26.10.
 
-**6. Muut esille tulevat asiat eli META**
+### **6. Muut esille tulevat asiat eli META**
 
-**7. Seuraavan kokouksen ajan päättäminen: myöhemmin**
+### **7. Seuraavan kokouksen ajan päättäminen: myöhemmin**
 
-**8. Kokouksen päättäminen -** kokous päätettiin ajassa 15.48
+### **8. Kokouksen päättäminen -** kokous päätettiin ajassa 15.48
 
  
 

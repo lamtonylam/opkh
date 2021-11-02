@@ -14,16 +14,18 @@ categories: ["kirja"]
 authors: ["admin"]
 url: "/toka-kokous"
 ---
+{{< toc >}}
+
 Läsnäolijat:
 Dan Helenius, Aleksi Liukkonen, Helmi Töyri, Roope Jaskari, Väiski Salminen, Tony Lam, Marcel Mohanadas, Aava Arponen, Emilia Tyyskä, Emmi Kyrö, Emil Jacobsson  
 
-1. Kokouksen avaus - kokous avattiin ajassa 15.21
-2. Kokouksen laillisuus ja päätösvaltaisuus - kokous todettiin lailliseksi ja
+### 1. Kokouksen avaus - kokous avattiin ajassa 15.21
+### 2. Kokouksen laillisuus ja päätösvaltaisuus - kokous todettiin lailliseksi ja
 päätösvaltaiseksi
-3. Kokouksen järjestäytyminen - kokouksen puheenjohtajana toimi Dan Helenius  ja sihteerinä Helmi Töyri
+### 3. Kokouksen järjestäytyminen - kokouksen puheenjohtajana toimi Dan Helenius  ja sihteerinä Helmi Töyri
 	1. Myönnetään puhe -ja läsnäolo-oikeudet.
-4. Todetaan hallituksen taloudellinen tilanne 3483,71 €
-5. Käsiteltävät asiat
+### 4. Todetaan hallituksen taloudellinen tilanne 3483,71 €
+### 5. Käsiteltävät asiat
 	1. Ystävänpäivä 
 		Nettisivuille laitetaan rakkausaiheinen helluradio ja Instagramiin tehdään päivitys. Viikkotiedotteessa kerrotaan nettisivusta. Nettisivulle laitetaan myös yhteensopivuuslaskuri.
 	3. OPK-päivät
@@ -32,6 +34,6 @@ päätösvaltaiseksi
 		Talent directoryä ei tehdä, mutta voidaan miettiä kesätyömainosten linkkaamista nettisivulle.
 	5. Uudet ohjukset
 		Terhin tilalle tulee uusi ohjus
-6. Muut esille tulevat asiat eli META
-7. Seuraavan kokouksen ajan päättäminen Päätetään myöhemmin 
-8. Kokouksen päättäminen - kokous päätettiin ajassa 16.38
+### 6. Muut esille tulevat asiat eli META
+### 7. Seuraavan kokouksen ajan päättäminen Päätetään myöhemmin 
+### 8. Kokouksen päättäminen - kokous päätettiin ajassa 16.38

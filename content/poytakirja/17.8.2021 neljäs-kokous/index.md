@@ -19,17 +19,17 @@ Helsingin Luonnontiedelukion opiskelijakunnan hallituksen kokous 17.8.2021
 
 Paikallaolijat: **Dan Helenius, Helmi Töyri, Julia Lehtelä, Emmi Kyrö, Roope Jaskari, Aleksi Liukkonen, Aava Arponen, Marcel Mohanadas, Emil Jacobsson, Emilia Tyyskä, Tony Lam, Väiski Salminen, Minna Hautaniemi, Kaisa Tikka, Mervi Karttunen, Oscar Escartin, Amanda Ryymin**
 
-**1. Kokouksen avaus** - kokous avattiin ajassa 16.20
+### **1. Kokouksen avaus** - kokous avattiin ajassa 16.20
 
-**2. Kokouksen laillisuus ja päätösvaltaisuus** - kokous todettiin lailliseksi japäätösvaltaiseksi
+### **2. Kokouksen laillisuus ja päätösvaltaisuus** - kokous todettiin lailliseksi japäätösvaltaiseksi
 
-**3. Kokouksen järjestäytyminen** - kokouksen puheenjohtajana toimi Dan Helenius ja sihteerinä Helmi Töyri
+### **3. Kokouksen järjestäytyminen** - kokouksen puheenjohtajana toimi Dan Helenius ja sihteerinä Helmi Töyri
 
-**3.1. Myönnetään puhe -ja läsnäolo-oikeudet** Minna Hautaniemelle, Kaisa Tikalle, Mervi Karttuselle, Oscar Escartinille, Amanda Ryyminille
+### **3.1. Myönnetään puhe -ja läsnäolo-oikeudet** Minna Hautaniemelle, Kaisa Tikalle, Mervi Karttuselle, Oscar Escartinille, Amanda Ryyminille
 
-**4. Todetaan hallituksen taloudellinen tilanne** Tilillä on rahaa 3 169,00 €
+### **4. Todetaan hallituksen taloudellinen tilanne** Tilillä on rahaa 3 169,00 €
 
-**5. Käsiteltävät asiat** => Minna Hautaniemi ja Kaista Tikka poistuvat kokouksesta, kun hallitus on esittäytynyt ja keskustellut rajoituksista rehtorien kanssa. 
+### **5. Käsiteltävät asiat** => Minna Hautaniemi ja Kaista Tikka poistuvat kokouksesta, kun hallitus on esittäytynyt ja keskustellut rajoituksista rehtorien kanssa. 
 
 **5.1. Väittelykerho ja matematiikkakerho**
 
@@ -59,7 +59,7 @@ Hellu-collegepaitoja ja -housuja, joita opiskelijat voivat itse ostaa. Vaatteiss
 
 OPKH:n kakkoset tekevät hellubingon ykkösille. Bingo alkaa ensi viikolla. Tieto bingosta menee viikkotiedotteeseen, nettisivuille ja Instagramiin. Tutorit jakavat bingon omien tutorluokkiensa WhatsApp-ryhmiin.
 
-**6. Muut esille tulevat asiat eli META**
+### **6. Muut esille tulevat asiat eli META**
 
 **6.1. Johtokunta**
 
@@ -69,7 +69,7 @@ Johtokuntaan valitaan pääjäseneksi Julia Lehtelä ja varajäseneksi Dan Helen
 
 Tapana on ollut antaa 100€ abitoimikunnalle TJ 100:n koristelua varten. Äänestetään yksimielisesti siitä, että OPKH voi antaa 100€ kyseiseen tarkoitukseen.
 
-**7. Seuraavan kokouksen ajan päättäminen myöhemmin**
+### **7. Seuraavan kokouksen ajan päättäminen myöhemmin**
 
-**8. Kokouksen päättäminen -** kokous päätettiin ajassa 18.20.17
+### **8. Kokouksen päättäminen -** kokous päätettiin ajassa 18.20.17
 
