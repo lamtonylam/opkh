@@ -23,16 +23,16 @@ Dan Helenius, Aleksi Liukkonen, Helmi Töyri, Roope Jaskari, Väiski Salminen, T
 ### 2. Kokouksen laillisuus ja päätösvaltaisuus - kokous todettiin lailliseksi ja
 päätösvaltaiseksi
 ### 3. Kokouksen järjestäytyminen - kokouksen puheenjohtajana toimi Dan Helenius  ja sihteerinä Helmi Töyri
-	1. Myönnetään puhe -ja läsnäolo-oikeudet.
+ Myönnetään puhe -ja läsnäolo-oikeudet.
 ### 4. Todetaan hallituksen taloudellinen tilanne 3483,71 €
 ### 5. Käsiteltävät asiat
-	1. Ystävänpäivä 
+1. Ystävänpäivä 
 		Nettisivuille laitetaan rakkausaiheinen helluradio ja Instagramiin tehdään päivitys. Viikkotiedotteessa kerrotaan nettisivusta. Nettisivulle laitetaan myös yhteensopivuuslaskuri.
-	3. OPK-päivät
+3. OPK-päivät
 		Järjestetään 11.2.2021 klo 12-14.
-	4. Talent directory
+4. Talent directory
 		Talent directoryä ei tehdä, mutta voidaan miettiä kesätyömainosten linkkaamista nettisivulle.
-	5. Uudet ohjukset
+5. Uudet ohjukset
 		Terhin tilalle tulee uusi ohjus
 ### 6. Muut esille tulevat asiat eli META
 ### 7. Seuraavan kokouksen ajan päättäminen Päätetään myöhemmin 
