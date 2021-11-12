@@ -1,5 +1,5 @@
 ---
-title: Hae hallituseen vuodelle 2022
+title: Hae hallitukseen vuodelle 2022
 subtitle: Hae vuoden 2022 OPKH:hon!
 date: 2021-11-12T08:41:23+08:00
 show_date: true
@@ -7,7 +7,7 @@ summary: Hae vuoden 2022 OPKH:hon!
 draft: false
 featured: false
 authors:
-  - tony
+  - admin
 url: /hae_opkh
 categories:
   - post
