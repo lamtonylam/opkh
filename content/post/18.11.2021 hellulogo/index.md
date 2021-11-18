@@ -21,3 +21,5 @@ Oletko kiinnostunut yhteisen hyvän tuottamisesta lukiossa? Oletko ehkä taiteel
 Jos vastasit edellisiin kysymyksiin kyllä, OPKH toivottaa sinut tervetulleeksi valmistelemaan yhdessä logoa painatettavaksi lukion vaatetuotteisiin! Ryhmässä suunnitellaan yhdessä tunnusta ja sovitaan lopullisesta ulkoasusta.
 
 Tule mukaan toimintaan laittamalla viestiä Instagram Diren kautta! Kaikki ilmoittautuneet toivotetaan mukaan toimintaan, ja tapaamisista sovitaan ryhmän kesken. 🎉
+
+Viestiä voi laittaa myös: vaate@opkh.fi
