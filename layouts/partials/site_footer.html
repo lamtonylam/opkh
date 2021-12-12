@@ -152,7 +152,40 @@
                                 value : 'necessary',
                                 enabled : true,
                                 readonly: true
-                            }
+                            },
+                            cookie_table: [
+							{
+								col1: 'cc_cookie',
+								col2: 'ophk.fi',
+								col3: '1 year',
+								col4: 'Used to distinguish cookie consent.' ,
+							},
+                            {
+								col1: '__Host-airtable-session.sig',
+								col2: 'airtable.com',
+								col3: '1 year',
+								col4: 'Session ID for Airtable platform.' ,
+							},
+                            {
+								col1: 'AWSELBCORS',
+								col2: 'airtable.com',
+								col3: 'Session',
+								col4: 'Load Balancing' ,
+							},
+                            {
+								col1: 'AWSELB',
+								col2: 'airtable.com',
+								col3: 'Session',
+								col4: 'Load Balancing' ,
+							},
+                            {
+								col1: 'brw',
+								col2: 'airtable.com',
+								col3: '1 year',
+								col4: 'Session ID for debugging' ,
+							},
+						] 				
+                            
                         },{
                             title : "Analytiikan evästeet",
                             description: 'Analytiikkaan. Jotta voimme paremmin ymmärtää sivustoamme. <br><br>Palvelut: <br>Google Analytics, Microsoft Clarity, Statcounter, Cloudflare',
@@ -226,6 +259,12 @@
 								col2: 'hubspot.com',
 								col3: '13 months',
 								col4: 'This cookie keeps track of a visitor identity. It is passed to HubSpot on form submission and used when deduplicating contacts.' ,
+							},
+                            {
+								col1: 'hubspotutk',
+								col2: 'hubspot.com',
+								col3: '13 months',
+								col4: "This cookie keeps track of a visitor's identity. It is passed to HubSpot on form submission and used when deduplicating contacts" ,
 							}
 						] 					
                         },{
