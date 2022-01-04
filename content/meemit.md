@@ -14,6 +14,10 @@ url: "/meemit"
 ---
 Viimeisin meemi:
 
+{{< instagram CXtaOfnISKs hidecaption >}}
+
+<div class="br"></br>
+
 {{< instagram CXls8FpI1JP hidecaption >}}
 
 <div class="br"></br>

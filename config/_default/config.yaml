@@ -86,3 +86,8 @@ privacy:
 timeout: 60000
 
 
+security:
+  funcs:
+    getenv:
+      - ^HUGO_
+      - ^WC_
