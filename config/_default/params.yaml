@@ -58,8 +58,6 @@ contact_links:
     name: 'Hellun OPKH:n Instagram'
     link: 'https://instagram.com/hellu_opkh'
 twitter: lamtonylam
-date_format: "02.01.2006\t"
-time_format: '15:04'
 address_format: fi
 main_menu:
   align: l

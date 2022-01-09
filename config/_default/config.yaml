@@ -91,3 +91,8 @@ security:
     getenv:
       - ^HUGO_
       - ^WC_
+params:
+  theme: minimal
+  locale:
+    date_format: '02.01.2006'
+    time_format: '3:04 PM'
