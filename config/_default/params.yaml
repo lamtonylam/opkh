@@ -1,11 +1,18 @@
-theme: minimal
+appearance:
+  theme_day: minimal
+  theme_night: minimal
+  font:
+  font_size: L
 day_night: true
-font: ''
-font_size: L
-site_type: Organization
-local_business_type: ''
-org_name: ''
-description: ''
+seo:
+  site_type: Organization
+  local_business_type: ''
+  org_name: ''
+  description: ''
+  twitter: ''
+header:
+  navbar:
+    enable: false
 highlight: false
 highlight_languages:
   - r
@@ -57,7 +64,6 @@ contact_links:
     icon_pack: fab
     name: 'Hellun OPKH:n Instagram'
     link: 'https://instagram.com/hellu_opkh'
-twitter: lamtonylam
 address_format: fi
 main_menu:
   align: l
