@@ -1,16 +1,16 @@
 ---
 # Display name
-title: Emil Jacobsson
+title: Oliver Meloni
 
 # Username (this should match the folder name)
 authors:
-- emil
+- Oliver
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: SLL-vastaava
+role: Tapahtumavastaava
 
 # Organizations/Affiliations
 #organizations:
@@ -36,16 +36,16 @@ interests:
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
-#social:
-#- icon: envelope
-#  icon_pack: fas
-#  link: 
-#- icon: instagram
-#  icon_pack: fab
-#  link: 
-#- icon: snapchat
-#  icon_pack: fab
- # link: 
+# social:
+# - icon: envelope
+#   icon_pack: fas
+#   link: 
+# - icon: instagram
+#   icon_pack: fab
+#   link: 
+# - icon: snapchat
+#   icon_pack: fab
+#   link: 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -61,5 +61,9 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- SLL-vastaava
+- Tapahtumavastaavat
+- Kahvikonevastaava
 ---
+Olen Oliver Meloni ryhmästä 20J. Yhtenä OPKH:n tapahtumavastaavista aion varmistaa, että meidän koulumme tapahtumien laatu pysyy hyvänä ja kaikilla on hauskaa!
+
+Varmistan myös, että kahvikone toimii!

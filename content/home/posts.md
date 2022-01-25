@@ -10,7 +10,7 @@ headless: true
 weight: 10
 
 title: Uutiset
-subtitle:
+subtitle: 
 
 content:
   # Page type to display. E.g. post, talk, publication...
@@ -42,4 +42,3 @@ design:
   # Customize the section spacing. Order is top, right, bottom, left.
   padding: ["0px", "0", "0px", "0"]
 ---
-
