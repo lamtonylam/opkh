@@ -63,4 +63,4 @@ highlight_name: false
 user_groups:
 - Kirjakirppisvastaavat
 ---
-Mooi, mä oon Amalia ja oon yks kirjakirppisvastaavista! :D Kukaan ei kysyny, mut mun lempi eläin on kilpikonna.🐢
+Mooi, mä oon Amalia ja oon yks kirjakirppisvastaavista! :D Kukaan ei kysyny, mut mun lempieläin on kilpikonna.🐢
