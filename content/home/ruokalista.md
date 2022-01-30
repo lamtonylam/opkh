@@ -20,14 +20,14 @@ design:
 ---
 <center>
 
-[https://aromi.hel.fi/](https://aromi.hel.fi/AromieMenus/FI/Default/PALKE/KeMenu002/Restaurant.aspx)
+[https://aromi.hel.fi/](https://aromi.hel.fi/AromieMenus/FI/Default/PALKE/KeMenu027/Restaurant.aspx)
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
     $('#button').click(function(){ 
         if(!$('#iframe').length) {
-                $('#iframeHolder').html('<iframe src="https://aromi.hel.fi/AromieMenus/FI/Default/PALKE/KeMenu002/Restaurant.aspx" width="65%" height="350" loading="lazy" frameborder="0" marginheight="0" marginwidth="0">');
+                $('#iframeHolder').html('<iframe src="https://aromi.hel.fi/AromieMenus/FI/Default/PALKE/KeMenu027/Restaurant.aspx" width="65%" height="350" loading="lazy" frameborder="0" marginheight="0" marginwidth="0">');
         }
     });   
 });
