@@ -20,6 +20,6 @@ Ystävänpäivä lähestyy ja OPKH suunnitteli teille kirjeboksin, minkä kautta
 
 HUOM! Jos haluat, että viestisi pääse perille, niin seuraathan ohjeita kirjeen laatimisesta, jotka tulevat OPKH:n Instagram stooriin maanantaina!
 
-Lisäksi OPKH käynnistää uuden V2.0 Hellucrush calculatorin osoitteessa **opkh.fi/love** .Testaa sinun ja hellucrushisi yhteensopivuus!
+Lisäksi OPKH käynnistää uuden V2.0 Hellucrush calculatorin osoitteessa https://opkh.fi/love .Testaa sinun ja hellucrushisi yhteensopivuus!
 
 Muista myös pukeutua ystävänpäivän mukaisesti eli pinkit, punaiset tai/ja valkoiset värit!
