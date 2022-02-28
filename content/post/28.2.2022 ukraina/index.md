@@ -1,6 +1,6 @@
 ---
 title: Keräys Ukrainan hyväksi 💙💛
-summary: Tiistaina 3.1., ruokalassa.
+summary: Tiistaina 1.3., ruokalassa.
 date: 2022-02-28
 draft: false
 featured: false
