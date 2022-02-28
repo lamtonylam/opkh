@@ -9,7 +9,7 @@ authors:
 categories: ["post"]
 image:
   focal_point: Smart
-  preview_only: true
+  preview_only: false
 url: "/ukraina"
 ---
 <div align="center">
