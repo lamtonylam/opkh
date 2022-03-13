@@ -63,3 +63,6 @@ highlight_name: false
 user_groups:
 - Viestintävastaavat
 ---
+Moi.  
+Olen Ilia Sotkajärvi ja roolini on viestintävastaava. Jos näette jotain outoa photoshop instassa se on todenäköisesti minun tekemä.  
+Olen helposti lähestyttävä tyyppi joten tarvittaessa jotakin voitte tulla kysymään milloin vaan.
