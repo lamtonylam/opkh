@@ -1,14 +1,14 @@
 ---
 title: Helluradio
 subtitle: Helluradioon ehdotuksia sekä soitettujen biisien lista.
-date: 2022-02-28T09:41:22+08:00
+date: 2022-04-04T09:41:22+08:00
 show_date: false
 summary: Helluradioon ehdotuksia sekä soitettujen biisien lista.
 draft: false
 featured: false
 authors:
   - tony
-url: /radio
+url: /teemapaiva-huhtikuu
 categories:
   - post
 image:
