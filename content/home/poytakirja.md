@@ -7,7 +7,7 @@ widget: pages
 headless: true
 
 # Order that this section appears on the page.
-weight: 61
+weight: 9999
 
 title: Pöytäkirjat
 subtitle:

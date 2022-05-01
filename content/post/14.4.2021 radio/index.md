@@ -8,7 +8,7 @@ draft: false
 featured: false
 authors:
   - tony
-url: /teemapaiva-huhtikuu
+url: /radio
 categories:
   - post
 image:
