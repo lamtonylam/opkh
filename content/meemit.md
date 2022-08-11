@@ -12,8 +12,8 @@ header:
   image: ""
 url: "/meemit"
 ---
-Viimeisin meemi:
+Viimeisin
 
-work in progress.
+work in progress.  
 
-{{< instagram CXls8FpI1JP hidecaption >}}
+Facebook teki jotain muutoksia niitten API-rajapintaan, niin meemit löytää instasivulta eikä täältä.
