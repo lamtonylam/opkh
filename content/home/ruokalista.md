@@ -20,8 +20,6 @@ design:
 ---
 <center>
 
-Ruokalista on lomalla!  
-Hyvää lomaa!
 
 [https://aromi.hel.fi/](https://aromi.hel.fi/AromieMenus/FI/Default/PALKE/KeMenu027/Restaurant.aspx)
 
