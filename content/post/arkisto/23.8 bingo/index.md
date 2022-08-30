@@ -1,10 +1,10 @@
 ---
 title: Hellubingo
 subtitle:
-date: 2021-08-22
+date: 2022-08-29
 summary: Uusille ykkösille suunnattu, perinteinen Hellubingo!
 show_date: true
-draft: true
+draft: false
 featured: false
 authors:
   - tony
@@ -13,12 +13,11 @@ categories:
   - post
 image:
   focal_point: Smart
-  preview_only: true
+  preview_only: false
   caption: ""
-  filename: 
+  filename: bingo.jpeg
 ---
 
-![Hellubingo](bingo.png)
 
 Tänään alkaa ykkösille suunnattu, perinteinen Hellubingo!  
 
@@ -30,8 +29,4 @@ Bingon tekoaika on kaksi viikkoa ja tehtäviä voi tehdä enintään 3/pä
 
 Tänä vuonna voittajaryhmä ei välttämättä ole nopein, vaan voittoon vaikuttaa eniten vastausten laatu. Voittajalle on luvassa huikea palkinto!  
 
-Onnea matkaan ykköset!  
-
-**Bingopohja**
-
-<a href="https://docs.google.com/document/d/1RJLSUAeYgOrGzQkyclCiXtJDBAkkr_qg-k5lEVNCLGU/edit?usp=sharing/" target="_blank">docs.google.com</a>
+Onnea matkaan ykköset!
