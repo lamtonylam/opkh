@@ -40,3 +40,7 @@
 [[redirects]]
   from = "/love"
   to = "https://love.opkh.fi/"
+
+[[redirects]]
+  from = "/kulttuuriilmo"
+  to = "https://forms.gle/ewf8LsxYTtuarqZw8"
