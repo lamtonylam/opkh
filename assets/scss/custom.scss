@@ -5,6 +5,21 @@ ul#menu-horizontal {
   display: flex;
   width: 100%;
   justify-content: flex-start;
+
+  @media screen and (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;	
+    display: block;
+    width: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+       grid-template-areas:
+      ". ."
+      ". ."
+      ". .";
+  }
 }
 
 ul#menu-horizontal li {
@@ -13,34 +28,14 @@ ul#menu-horizontal li {
   width: max-content;
 }
 
-@media screen and (max-width: 768px) {
-    ul#menu-horizontal {
-      margin-left: auto;
-      margin-right: auto;	
-      display: block;
-      width: max-content;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      gap: 20px 20px;
-         grid-template-areas:
-        ". ."
-        ". ."
-        ". .";
-    }
-  }
+.menu-item-title {
+  font-size: 0.9rem;
 
-.title {
-    font-size: 0.9rem;
-  }
-  
   @media screen and (max-width: 768px) {
-    .title {
-        font-size: 1rem;
-    }
+    font-size: 1rem;
   }
+}
 
-
-.br {
+.bottom-margin {
   margin-bottom: 1em;
 }
